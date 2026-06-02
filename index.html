@@ -970,64 +970,65 @@
 
 
     <div class="modal" id="callback-modal" aria-hidden="true">
-            <div class="modal__content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-                <button class="modal__close" type="button" aria-label="Закрити" data-modal-close>
-                    <img src="img/close2.svg" width="24" height="24" alt="">
-                </button>
-                <h2 class="modal__title">Отримати консультацію</h2>
-                <p class="modal__text">Перша консультація безкоштовна. Розкажіть про свій бізнес — запропонуємо рішення і назвемо точну ціну.</p>
+        <div class="modal__content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="modal__close" type="button" aria-label="Закрити" data-modal-close>
+                <img src="img/close2.svg" width="24" height="24" alt="">
+            </button>
+            <h2 class="modal__title">Отримати консультацію</h2>
+            <p class="modal__text">Перша консультація безкоштовна. Розкажіть про свій бізнес — запропонуємо рішення і
+                назвемо точну ціну.</p>
 
-                <form class="feedback__form">
+            <form class="feedback__form">
 
-                    <div class="feedback__field">
-                        <input class="feedback__input" type="text" name="name" id="user-name-popup" placeholder="Ім’я"
-                            aria-label="Ваше ім’я" required>
-                    </div>
+                <div class="feedback__field">
+                    <input class="feedback__input" type="text" name="name" id="user-name-popup" placeholder="Ім’я"
+                        aria-label="Ваше ім’я" required>
+                </div>
 
-                    <div class="feedback__radio-group">
-                        <p class="feedback__radio-title">Оберіть спосіб звʼязку з Вами:</p>
-                        <div class="feedback__radio-options">
-                            <label class="feedback__radio-label" for="contact-email">
-                                <input class="feedback__radio-input" type="radio" name="contact_method"
-                                    id="contact-email-popup" value="email" checked>
-                                <span class="feedback__radio-text">Email</span>
-                            </label>
-                            <label class="feedback__radio-label" for="contact-phone">
-                                <input class="feedback__radio-input" type="radio" name="contact_method"
-                                    id="contact-phone-popup" value="phone">
-                                <span class="feedback__radio-text">Телефон</span>
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="feedback__field">
-                        <input class="feedback__input" type="email" name="email" id="user-email-popup" placeholder="Email"
-                            aria-label="Ваш Email" required>
-                    </div>
-
-                    <div class="feedback__field">
-                        <textarea class="feedback__textarea" name="message" id="user-message-popup" placeholder="Повідомлення"
-                            aria-label="Ваше повідомлення"></textarea>
-                    </div>
-
-                    <div class="feedback__consent">
-                        <label class="feedback__consent-label" for="user-consent">
-                            <input class="feedback__consent-input" type="checkbox" name="consent" id="user-consent-popup"
-                                required>
-                            <span class="feedback__consent-text">Погоджуюсь на обробку персональних даних</span>
+                <div class="feedback__radio-group">
+                    <p class="feedback__radio-title">Оберіть спосіб звʼязку з Вами:</p>
+                    <div class="feedback__radio-options">
+                        <label class="feedback__radio-label" for="contact-email">
+                            <input class="feedback__radio-input" type="radio" name="contact_method"
+                                id="contact-email-popup" value="email" checked>
+                            <span class="feedback__radio-text">Email</span>
+                        </label>
+                        <label class="feedback__radio-label" for="contact-phone">
+                            <input class="feedback__radio-input" type="radio" name="contact_method"
+                                id="contact-phone-popup" value="phone">
+                            <span class="feedback__radio-text">Телефон</span>
                         </label>
                     </div>
+                </div>
 
-                    <button class="feedback__submit btn" type="submit">
-                        Надіслати
-                        <img class="feedback__submit-icon" src="img/link-arrow-black.svg" width="37" height="11" alt=""
-                            aria-hidden="true">
-                    </button>
+                <div class="feedback__field">
+                    <input class="feedback__input" type="email" name="email" id="user-email-popup" placeholder="Email"
+                        aria-label="Ваш Email" required>
+                </div>
 
-                    <p class="feedback__policy">Ваші дані захищені та не передаються третім особам. Відповімо протягом
-                        одного робочого дня.</p>
-                </form>
-            </div>
+                <div class="feedback__field">
+                    <textarea class="feedback__textarea" name="message" id="user-message-popup"
+                        placeholder="Повідомлення" aria-label="Ваше повідомлення"></textarea>
+                </div>
+
+                <div class="feedback__consent">
+                    <label class="feedback__consent-label" for="user-consent">
+                        <input class="feedback__consent-input" type="checkbox" name="consent" id="user-consent-popup"
+                            required>
+                        <span class="feedback__consent-text">Погоджуюсь на обробку персональних даних</span>
+                    </label>
+                </div>
+
+                <button class="feedback__submit btn" type="submit">
+                    Надіслати
+                    <img class="feedback__submit-icon" src="img/link-arrow-black.svg" width="37" height="11" alt=""
+                        aria-hidden="true">
+                </button>
+
+                <p class="feedback__policy">Ваші дані захищені та не передаються третім особам. Відповімо протягом
+                    одного робочого дня.</p>
+            </form>
+        </div>
     </div>
 
 

@@ -188,7 +188,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const callBtn = document.querySelector('.fixed-info__call-btn');
     const modal = document.getElementById('callback-modal');
-    const closeButtons = document.querySelectorAll('[data-modal-close]');
 
     const openModal = () => {
         if (!modal) return;
@@ -206,12 +205,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     callBtn?.addEventListener('click', openModal);
 
-    closeButtons.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            if (e.target === btn) {
-                closeModal();
-            }
-        });
+    const closeBtn = modal?.querySelector('.modal__close');
+    closeBtn?.addEventListener('click', closeModal);
+
+    modal?.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
     });
 
     document.addEventListener('keydown', (e) => {
