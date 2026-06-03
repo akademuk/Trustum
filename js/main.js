@@ -291,12 +291,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const fixedInfo = document.querySelector('.fixed-info');
-    const triggerSection = document.querySelector('main > section:nth-of-type(3)');
+    const isHomePage = Boolean(document.querySelector('main > section.hero'));
+    const triggerSection = isHomePage
+        ? document.querySelector('main > section:nth-of-type(3)')
+        : null;
 
     const updateFixedInfoVisibility = () => {
-        if (!fixedInfo || !triggerSection) return;
+        if (!fixedInfo) return;
 
-        const show = window.scrollY >= triggerSection.offsetTop - 120;
+        const show = triggerSection
+            ? window.scrollY >= triggerSection.offsetTop - 120
+            : true;
+
         const scrollBottom = document.documentElement.scrollHeight - window.innerHeight - window.scrollY;
         const isAtBottom = scrollBottom <= 50;
 
@@ -306,7 +312,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     if (fixedInfo) {
-        fixedInfo.setAttribute('aria-hidden', 'true');
+        fixedInfo.setAttribute('aria-hidden', isHomePage ? 'true' : 'false');
         updateFixedInfoVisibility();
         window.addEventListener('scroll', updateFixedInfoVisibility, { passive: true });
         window.addEventListener('resize', updateFixedInfoVisibility);
