@@ -2895,4 +2895,8 @@ body.no-scroll {
     font-size: var(--font-size-16);
     line-height: 20px; 
   }
+
+  .fixed-info {
+    display: none;
+  }
 }
