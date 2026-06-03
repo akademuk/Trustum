@@ -1371,10 +1371,6 @@ body.no-scroll {
   transform: translateX(-50%);
 }
 
-.cases__link-icon {
-  filter: brightness(0) saturate(100%) invert(19%) sepia(30%) saturate(5007%) hue-rotate(272deg) brightness(95%) contrast(87%);
-}
-
 .cases__pagination {
   display: flex;
   align-items: center;
@@ -2898,5 +2894,11 @@ body.no-scroll {
 
   .fixed-info {
     display: none;
+  }
+
+  .service-sectors__item:hover .service-sectors__icon,
+  .service-sectors__item:hover .service-sectors__item-title {
+    left: 0;
+    transform: none;
   }
 }
