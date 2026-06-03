@@ -386,7 +386,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    const callBtn = document.querySelector('.fixed-info__call-btn');
+    const callBtn = document.querySelector('.hero__btn--primary');
     const modal = document.getElementById('callback-modal');
 
     const openModal = () => {

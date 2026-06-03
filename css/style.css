@@ -55,6 +55,7 @@ html {
 body {
   font-family: var(--font-primary);
   font-size: var(--font-size-14);
+  color: var(--color-text-black);
   line-height: 1;
   font-weight: 400;
   background: var(--main-color);
@@ -202,6 +203,7 @@ body.no-scroll {
   font-size: var(--font-size-14);
   font-weight: 500;
   line-height: 16px;
+  width: max-content;
   text-transform: uppercase;
 }
 
@@ -2889,26 +2891,141 @@ body.no-scroll {
   width: calc(33.33% - 16px) !important;
 }
 
+.single-case__hero {
+  padding: 24px 0 56px;
+}
 
+.single-case__hero-header {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 
+.single-case__hero-title {
+  color: var(--color-text-black);
+  font-size: var(--font-size-36);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.36px;
+}
 
+.single-case__hero-description {
+  color: var(--color-text-black);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+}
 
+.single-case__description {
+  font-size: var(--font-size-16);
+  font-weight: 400;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
+.single-case__result {
+  display: flex;
+  align-items: center;
+  gap: 62px 32px;
+  flex-wrap: wrap;
+}
 
+.single-case__result-boxes {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
 
+.single-case__result-title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height:  24px;
+}
 
+.single-case__result-box {
+  display: flex;
+  padding: 16px 24px;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 23px;
+  background: var(--color-title-white);
+}
 
+.single-case__result-value {
+  color: var(--color-text-green);
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 24px;
+}
 
+.single-case__result-label {
+  font-size: var(--font-size-16);
+  font-weight: 600;
+  line-height: 1.5;
+}
 
+.single-case__result-values {
+  font-size: var(--font-size-16);
+  line-height: 1.5;
+}
 
+.banner {
+  margin-bottom: 56px;
+}
 
+.banner .container {
+  border-radius: 32px;
+  background: linear-gradient(337deg, #7D5282 4.68%, #441551 74.31%);
+  padding: 40px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.banner__left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
+.banner__left h3 {
+  color: #B740CE;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.3px;
+}
 
+.banner__left p {
+  color: var(--color-title-white);
+  font-size: 20px;
+  line-height: 30px;
+}
 
+.banner__btn {
+  display: flex;
+  padding: 18px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 43px;
+  border: 2px solid var(--color-title-white);
+  color: var(--color-title-white);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  white-space: nowrap;
+  transition: all 0.4s;
+}
 
-
-
+.banner__btn:hover {
+  background: var(--color-text-green);
+  border-color: var(--color-text-green);
+  color: var(--color-title-white);
+}
 
 
 
@@ -3654,4 +3771,68 @@ body.no-scroll {
     background: var(--color-title-white);
     box-shadow: 0 0 22.7px 0 rgba(210, 179, 229, 0.35);
   }
+
+  .single-case__hero-title {
+    font-size: 28px;
+    letter-spacing: 0.28px;
+  }
+
+  .single-case__hero-description {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .single-case__result {
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .single-case__result-boxes {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .single-case__result-value {
+    font-size: 22px;
+    line-height: 24px; 
+  }
+
+  .single-case__result-label {
+    font-size: var(--font-size-14);
+  }
+
+  .single-case__result-box {
+    flex-wrap: wrap;
+  }
+
+  .single-case__result-title {
+    font-size: 18px;
+    line-height: 24px; 
+  }
+
+  .banner .container {
+    border-radius: 16px;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+  }
+
+  .banner__left {
+    gap: 8px;
+  }
+
+  .banner__left h3 {
+    font-size: 22px;
+    letter-spacing: 0.22px;
+  }
+
+  .banner__left p {
+    font-size: 16px;
+    line-height: 21px; 
+  }
+
+  .banner__btn {
+    font-size: 18px;
+  }
 }
+
