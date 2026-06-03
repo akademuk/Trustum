@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Бухгалтерія, яка бере відповідальність</title>
+
+    <noscript>
+        <link rel="stylesheet" href="libs/fancybox/fancybox.css" />
+        <link rel="stylesheet" href="libs/swiper/swiper-min.css" />
+    </noscript>
+
+    <link rel="stylesheet" href="libs/aos/aos.css" />
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__top">
+            <div class="container header__container">
+                <a href="/" class="header__logo-link" aria-label="На головну сторінку">
+                    <img class="header__logo-img" src="img/logo.svg" width="231" height="55" alt="Логотип компанії">
+                </a>
+
+                <nav class="header__top-nav">
+                    <ul class="header__top-list">
+                        <li class="header__top-item"><a href="/" class="header__top-link">Про нас</a></li>
+                        <li class="header__top-item"><a href="/" class="header__top-link">Фінансова відповідальність</a>
+                        </li>
+                        <li class="header__top-item"><a href="/" class="header__top-link">Медіа</a></li>
+                        <li class="header__top-item"><a href="/" class="header__top-link">Контакти</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__contacts">
+                    <ul class="header__phones">
+                        <li class="header__phones-item">
+                            <a href="tel:+380981045341" class="header__phones-link">+38 (098) 104 53 41</a>
+                        </li>
+                        <li class="header__phones-item">
+                            <a href="tel:+380953810683" class="header__phones-link">+38 (095) 381 06 83</a>
+                        </li>
+                    </ul>
+
+                    <div class="header__lang">
+                        <div class="lang-dropdown lang-dropdown--desktop" data-lang-dropdown>
+                            <button type="button" class="lang-dropdown__trigger" id="lang-select"
+                                aria-haspopup="listbox" aria-expanded="false" aria-label="Вибір мови">
+                                <span class="lang-dropdown__value">Укр</span>
+                                <span class="lang-dropdown__chevron" aria-hidden="true"></span>
+                            </button>
+                            <ul class="lang-dropdown__menu" role="listbox" aria-label="Вибір мови">
+                                <li>
+                                    <button type="button" class="lang-dropdown__option is-selected" role="option"
+                                        data-value="uk" data-short="Укр" aria-selected="true">Українська</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="lang-dropdown__option" role="option" data-value="en"
+                                        data-short="En" aria-selected="false">English</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="lang-dropdown__option" role="option" data-value="ru"
+                                        data-short="Ру" aria-selected="false">Русский</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="lang-dropdown__option" role="option" data-value="de"
+                                        data-short="De" aria-selected="false">Deutsch</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__top-mobile">
+                    <a href="#contacts" class="header__mobile-contact" aria-label="Зв'язатися з нами">
+                        <img class="header__mobile-icon" src="img/contact.svg" width="32" height="32" alt="">
+                    </a>
+
+                    <button type="button" class="burger" aria-label="Відкрити меню" aria-expanded="false">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__main">
+            <div class="container header__container">
+                <nav class="header__main-nav">
+                    <ul class="header__main-list">
+                        <li class="header__main-item">
+                            <a href="/" class="header__main-link">Бухгалтерські послуги</a>
+
+                            <div class="header__submenu">
+                                <ul class="header__submenu-list">
+                                    <li class="header__submenu-item"><a href="/"
+                                            class="header__submenu-link">Бухгалтерські
+                                            послуги для ФОП</a></li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Кадровий
+                                            облік</a>
+                                    </li>
+                                    <li class="header__submenu-item"><a href="/"
+                                            class="header__submenu-link">Бухгалтерські
+                                            послуги для ТОВ</a></li>
+                                    <li class="header__submenu-item"><a href="/"
+                                            class="header__submenu-link">Відновлення
+                                            бухгалтерського обліку</a></li>
+                                    <li class="header__submenu-item"><a href="/"
+                                            class="header__submenu-link">Бухгалтерські
+                                            послуги для неприбуткових організацій</a></li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Разові
+                                            бухгалтерські послуги</a></li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Дія
+                                            Сіті</a></li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Аутсорсинг
+                                            бухгалтерських послуг</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__main-item">
+                            <a href="/" class="header__main-link">Реєстрація бізнесу</a>
+
+                            <div class="header__submenu">
+                                <ul class="header__submenu-list">
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Реєстрація
+                                            ФОП</a></li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Реєстрація
+                                            ТОВ</a>
+                                    </li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Ліквідація
+                                            ФОП та ТОВ</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__main-item">
+                            <a href="/" class="header__main-link">Податковий консалтинг</a>
+
+                            <div class="header__submenu">
+                                <ul class="header__submenu-list">
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Податкові
+                                            консультації</a></li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Робота з
+                                            податковими органами</a>
+                                    </li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Супровід
+                                            камеральних та виїзних
+                                            перевірок</a></li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Звітність
+                                            по КІК</a></li>
+                                    <li class="header__submenu-item"><a href="/"
+                                            class="header__submenu-link">Оптимізація оподаткування</a></li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Декларація
+                                            про майновий стан та
+                                            доходи фізичних осіб</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__main-item">
+                            <a href="/" class="header__main-link">Тарифи</a>
+
+                            <div class="header__submenu">
+                                <ul class="header__submenu-list">
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Тарифи для
+                                            ТОВ</a></li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Тарифи для
+                                            ФОП</a></li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Тарифи для
+                                            НПО</a></li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Тарифи на
+                                            реєстрацію та
+                                            ліквідацію</a></li>
+                        </li>
+                        <li class="header__submenu-item"><a href="/" class="header__submenu-link">Розрахувати вартість
+                                супроводу</a></li>
+                    </ul>
+            </div>
+            </li>
+
+            </ul>
+            </nav>
+
+            <ul class="header__socials">
+                <li class="header__socials-item">
+                    <a href="/" target="_blank" rel="noopener noreferrer" class="header__socials-link"
+                        aria-label="Наш Telegram">
+                        <img class="header__socials-icon" src="img/telegram.svg" width="26" height="26" alt="">
+                    </a>
+                </li>
+                <li class="header__socials-item">
+                    <a href="/" target="_blank" rel="noopener noreferrer" class="header__socials-link"
+                        aria-label="Наш WhatsApp">
+                        <img class="header__socials-icon" src="img/whatsapp.svg" width="26" height="26" alt="">
+                    </a>
+                </li>
+                <li class="header__socials-item">
+                    <a href="/" target="_blank" rel="noopener noreferrer" class="header__socials-link"
+                        aria-label="Наш Viber">
+                        <img class="header__socials-icon" src="img/viber.svg" width="26" height="26" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="cases__hero">
+            <div class="container">
+
+                <nav class="breadcrumbs__container breadcrumbs__container--black" aria-label="Хлібні крихти">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <a href="/" class="breadcrumbs__link">Головна</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__current" aria-current="page">Кейси</span>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="cases__hero-header">
+                    <span class="sub__black">Кейси</span>
+                    <h1 class="cases__hero-title">Кейси: реальні ситуації та конкретні результати</h1>
+                    <p class="cases__hero-description">Без імен клієнтів — з їхньої згоди або без неї — але з реальними
+                        цифрами і деталями. Щоб ви розуміли, з якими задачами до нас приходять і що ми з ними робимо.
+                    </p>
+                </div>
+
+                <div class="cases__body" data-cases-tabs>
+                    <div class="cases__body-tabs" role="tablist" aria-label="Фільтр кейсів">
+                        <button type="button" class="cases__body-tab is-active" role="tab" aria-selected="true"
+                            data-cases-tab="all">Всі кейси</button>
+                        <button type="button" class="cases__body-tab" role="tab" aria-selected="false"
+                            data-cases-tab="fop">ФОП</button>
+                        <button type="button" class="cases__body-tab" role="tab" aria-selected="false"
+                            data-cases-tab="tov">ТОВ</button>
+                        <button type="button" class="cases__body-tab" role="tab" aria-selected="false"
+                            data-cases-tab="audits">Перевірки</button>
+                        <button type="button" class="cases__body-tab" role="tab" aria-selected="false"
+                            data-cases-tab="recovery">Відновлення обліку</button>
+                        <button type="button" class="cases__body-tab" role="tab" aria-selected="false"
+                            data-cases-tab="registration">Реєстрація</button>
+                        <button type="button" class="cases__body-tab" role="tab" aria-selected="false"
+                            data-cases-tab="kik">КІК</button>
+                        <button type="button" class="cases__body-tab" role="tab" aria-selected="false"
+                            data-cases-tab="optimization">Оптимізація</button>
+                    </div>
+
+                    <div class="cases__body-content">
+                        <div class="cases__body-item">
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">IT-сфера</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Перехід в Дія Сіті і оптимізація податкового
+                                        навантаження</h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">340 000 грн</strong>
+                                        <span class="cases__card-label">економії на рік</span>
+                                    </div>
+
+                                    <p class="cases__description">Провели аналіз поточної моделі і порівняли з Дія Сіті.
+                                        Супроводили отримання статусу резидента і перехід на нову систему за 6 тижнів.
+                                    </p>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">будівництво</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Супровід виїзної перевірки —скасовано 91% донарахувань
+                                    </h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">38 000 грн</strong>
+                                        <span class="cases__card-label">скасований донарахувань</span>
+                                    </div>
+
+                                    <div class="cases__description">
+                                        <p>Первісна сума в акті — 420 000 грн. Підготували
+                                            заперечення на 24 сторінки з посиланням на судову практику. Результат — 38
+                                            000
+                                            грн.
+                                        </p>
+                                    </div>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">IT-сфера</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Перехід в Дія Сіті і оптимізація податкового
+                                        навантаження</h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">340 000 грн</strong>
+                                        <span class="cases__card-label">економії на рік</span>
+                                    </div>
+
+                                    <p class="cases__description">Провели аналіз поточної моделі і порівняли з Дія Сіті.
+                                        Супроводили отримання статусу резидента і перехід на нову систему за 6 тижнів.
+                                    </p>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">IT-сфера</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Перехід в Дія Сіті і оптимізація податкового
+                                        навантаження</h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">340 000 грн</strong>
+                                        <span class="cases__card-label">економії на рік</span>
+                                    </div>
+
+                                    <p class="cases__description">Провели аналіз поточної моделі і порівняли з Дія Сіті.
+                                        Супроводили отримання статусу резидента і перехід на нову систему за 6 тижнів.
+                                    </p>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">будівництво</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Супровід виїзної перевірки —скасовано 91% донарахувань
+                                    </h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">38 000 грн</strong>
+                                        <span class="cases__card-label">скасований донарахувань</span>
+                                    </div>
+
+                                    <div class="cases__description">
+                                        <p>Первісна сума в акті — 420 000 грн. Підготували
+                                            заперечення на 24 сторінки з посиланням на судову практику. Результат — 38
+                                            000
+                                            грн.
+                                        </p>
+                                    </div>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">IT-сфера</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Перехід в Дія Сіті і оптимізація податкового
+                                        навантаження</h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">340 000 грн</strong>
+                                        <span class="cases__card-label">економії на рік</span>
+                                    </div>
+
+                                    <p class="cases__description">Провели аналіз поточної моделі і порівняли з Дія Сіті.
+                                        Супроводили отримання статусу резидента і перехід на нову систему за 6 тижнів.
+                                    </p>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">IT-сфера</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Перехід в Дія Сіті і оптимізація податкового
+                                        навантаження</h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">340 000 грн</strong>
+                                        <span class="cases__card-label">економії на рік</span>
+                                    </div>
+
+                                    <p class="cases__description">Провели аналіз поточної моделі і порівняли з Дія Сіті.
+                                        Супроводили отримання статусу резидента і перехід на нову систему за 6 тижнів.
+                                    </p>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">будівництво</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Супровід виїзної перевірки —скасовано 91% донарахувань
+                                    </h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">38 000 грн</strong>
+                                        <span class="cases__card-label">скасований донарахувань</span>
+                                    </div>
+
+                                    <div class="cases__description">
+                                        <p>Первісна сума в акті — 420 000 грн. Підготували
+                                            заперечення на 24 сторінки з посиланням на судову практику. Результат — 38
+                                            000
+                                            грн.
+                                        </p>
+                                    </div>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">IT-сфера</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Перехід в Дія Сіті і оптимізація податкового
+                                        навантаження</h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">340 000 грн</strong>
+                                        <span class="cases__card-label">економії на рік</span>
+                                    </div>
+
+                                    <p class="cases__description">Провели аналіз поточної моделі і порівняли з Дія Сіті.
+                                        Супроводили отримання статусу резидента і перехід на нову систему за 6 тижнів.
+                                    </p>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">IT-сфера</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Перехід в Дія Сіті і оптимізація податкового
+                                        навантаження</h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">340 000 грн</strong>
+                                        <span class="cases__card-label">економії на рік</span>
+                                    </div>
+
+                                    <p class="cases__description">Провели аналіз поточної моделі і порівняли з Дія Сіті.
+                                        Супроводили отримання статусу резидента і перехід на нову систему за 6 тижнів.
+                                    </p>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">будівництво</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Супровід виїзної перевірки —скасовано 91% донарахувань
+                                    </h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">38 000 грн</strong>
+                                        <span class="cases__card-label">скасований донарахувань</span>
+                                    </div>
+
+                                    <div class="cases__description">
+                                        <p>Первісна сума в акті — 420 000 грн. Підготували
+                                            заперечення на 24 сторінки з посиланням на судову практику. Результат — 38
+                                            000
+                                            грн.
+                                        </p>
+                                    </div>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">IT-сфера</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Перехід в Дія Сіті і оптимізація податкового
+                                        навантаження</h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">340 000 грн</strong>
+                                        <span class="cases__card-label">економії на рік</span>
+                                    </div>
+
+                                    <p class="cases__description">Провели аналіз поточної моделі і порівняли з Дія Сіті.
+                                        Супроводили отримання статусу резидента і перехід на нову систему за 6 тижнів.
+                                    </p>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">IT-сфера</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Перехід в Дія Сіті і оптимізація податкового
+                                        навантаження</h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">340 000 грн</strong>
+                                        <span class="cases__card-label">економії на рік</span>
+                                    </div>
+
+                                    <p class="cases__description">Провели аналіз поточної моделі і порівняли з Дія Сіті.
+                                        Супроводили отримання статусу резидента і перехід на нову систему за 6 тижнів.
+                                    </p>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">будівництво</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Супровід виїзної перевірки —скасовано 91% донарахувань
+                                    </h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">38 000 грн</strong>
+                                        <span class="cases__card-label">скасований донарахувань</span>
+                                    </div>
+
+                                    <div class="cases__description">
+                                        <p>Первісна сума в акті — 420 000 грн. Підготували
+                                            заперечення на 24 сторінки з посиланням на судову практику. Результат — 38
+                                            000
+                                            грн.
+                                        </p>
+                                    </div>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">IT-сфера</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Перехід в Дія Сіті і оптимізація податкового
+                                        навантаження</h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">340 000 грн</strong>
+                                        <span class="cases__card-label">економії на рік</span>
+                                    </div>
+
+                                    <p class="cases__description">Провели аналіз поточної моделі і порівняли з Дія Сіті.
+                                        Супроводили отримання статусу резидента і перехід на нову систему за 6 тижнів.
+                                    </p>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">IT-сфера</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Перехід в Дія Сіті і оптимізація податкового
+                                        навантаження</h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">340 000 грн</strong>
+                                        <span class="cases__card-label">економії на рік</span>
+                                    </div>
+
+                                    <p class="cases__description">Провели аналіз поточної моделі і порівняли з Дія Сіті.
+                                        Супроводили отримання статусу резидента і перехід на нову систему за 6 тижнів.
+                                    </p>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">будівництво</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Супровід виїзної перевірки —скасовано 91% донарахувань
+                                    </h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">38 000 грн</strong>
+                                        <span class="cases__card-label">скасований донарахувань</span>
+                                    </div>
+
+                                    <div class="cases__description">
+                                        <p>Первісна сума в акті — 420 000 грн. Підготували
+                                            заперечення на 24 сторінки з посиланням на судову практику. Результат — 38
+                                            000
+                                            грн.
+                                        </p>
+                                    </div>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">IT-сфера</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Перехід в Дія Сіті і оптимізація податкового
+                                        навантаження</h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">340 000 грн</strong>
+                                        <span class="cases__card-label">економії на рік</span>
+                                    </div>
+
+                                    <p class="cases__description">Провели аналіз поточної моделі і порівняли з Дія Сіті.
+                                        Супроводили отримання статусу резидента і перехід на нову систему за 6 тижнів.
+                                    </p>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">IT-сфера</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Перехід в Дія Сіті і оптимізація податкового
+                                        навантаження</h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">340 000 грн</strong>
+                                        <span class="cases__card-label">економії на рік</span>
+                                    </div>
+
+                                    <p class="cases__description">Провели аналіз поточної моделі і порівняли з Дія Сіті.
+                                        Супроводили отримання статусу резидента і перехід на нову систему за 6 тижнів.
+                                    </p>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">будівництво</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Супровід виїзної перевірки —скасовано 91% донарахувань
+                                    </h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">38 000 грн</strong>
+                                        <span class="cases__card-label">скасований донарахувань</span>
+                                    </div>
+
+                                    <div class="cases__description">
+                                        <p>Первісна сума в акті — 420 000 грн. Підготували
+                                            заперечення на 24 сторінки з посиланням на судову практику. Результат — 38
+                                            000
+                                            грн.
+                                        </p>
+                                    </div>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">IT-сфера</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Перехід в Дія Сіті і оптимізація податкового
+                                        навантаження</h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">340 000 грн</strong>
+                                        <span class="cases__card-label">економії на рік</span>
+                                    </div>
+
+                                    <p class="cases__description">Провели аналіз поточної моделі і порівняли з Дія Сіті.
+                                        Супроводили отримання статусу резидента і перехід на нову систему за 6 тижнів.
+                                    </p>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">IT-сфера</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Перехід в Дія Сіті і оптимізація податкового
+                                        навантаження</h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">340 000 грн</strong>
+                                        <span class="cases__card-label">економії на рік</span>
+                                    </div>
+
+                                    <p class="cases__description">Провели аналіз поточної моделі і порівняли з Дія Сіті.
+                                        Супроводили отримання статусу резидента і перехід на нову систему за 6 тижнів.
+                                    </p>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">будівництво</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Супровід виїзної перевірки —скасовано 91% донарахувань
+                                    </h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">38 000 грн</strong>
+                                        <span class="cases__card-label">скасований донарахувань</span>
+                                    </div>
+
+                                    <div class="cases__description">
+                                        <p>Первісна сума в акті — 420 000 грн. Підготували
+                                            заперечення на 24 сторінки з посиланням на судову практику. Результат — 38
+                                            000
+                                            грн.
+                                        </p>
+                                    </div>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">IT-сфера</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Перехід в Дія Сіті і оптимізація податкового
+                                        навантаження</h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">340 000 грн</strong>
+                                        <span class="cases__card-label">економії на рік</span>
+                                    </div>
+
+                                    <p class="cases__description">Провели аналіз поточної моделі і порівняли з Дія Сіті.
+                                        Супроводили отримання статусу резидента і перехід на нову систему за 6 тижнів.
+                                    </p>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">IT-сфера</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Перехід в Дія Сіті і оптимізація податкового
+                                        навантаження</h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">340 000 грн</strong>
+                                        <span class="cases__card-label">економії на рік</span>
+                                    </div>
+
+                                    <p class="cases__description">Провели аналіз поточної моделі і порівняли з Дія Сіті.
+                                        Супроводили отримання статусу резидента і перехід на нову систему за 6 тижнів.
+                                    </p>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">будівництво</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Супровід виїзної перевірки —скасовано 91% донарахувань
+                                    </h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">38 000 грн</strong>
+                                        <span class="cases__card-label">скасований донарахувань</span>
+                                    </div>
+
+                                    <div class="cases__description">
+                                        <p>Первісна сума в акті — 420 000 грн. Підготували
+                                            заперечення на 24 сторінки з посиланням на судову практику. Результат — 38
+                                            000
+                                            грн.
+                                        </p>
+                                    </div>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cases__slide">
+                                <span class="cases__slide-sub">IT-сфера</span>
+                                <div class="cases__content">
+                                    <h3 class="cases__item-title">Перехід в Дія Сіті і оптимізація податкового
+                                        навантаження</h3>
+
+                                    <div class="cases__card">
+                                        <strong class="cases__card-value">340 000 грн</strong>
+                                        <span class="cases__card-label">економії на рік</span>
+                                    </div>
+
+                                    <p class="cases__description">Провели аналіз поточної моделі і порівняли з Дія Сіті.
+                                        Супроводили отримання статусу резидента і перехід на нову систему за 6 тижнів.
+                                    </p>
+
+                                    <a href="/" class="cases__link">
+                                        Читати кейс
+                                        <img class="cases__link-icon" src="img/link-arrow2.svg" width="25" height="7"
+                                            alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pagination">
+                    <ul>
+                        <li class="pagination__item-btn">
+                            <button class="pagination__button pagination__button--prev">
+                                <img class="pagination__button-icon" src="img/arrow-left.svg" width="25" height="7" alt="" aria-hidden="true">
+                            </button>
+                        </li>
+                        <li class="pagination__item">
+                            1
+                        </li>
+                        <li class="pagination__item">
+                            2
+                        </li>
+                        <li class="pagination__item">
+                            3
+                        </li>
+                        <li class="pagination__item">
+                            4
+                        </li>
+                        <li class="pagination__item">
+                            5
+                        </li>
+                        <li class="pagination__item-btn">
+                            <button class="pagination__button pagination__button--next">
+                                <img class="pagination__button-icon" src="img/arrow-left.svg" width="25" height="7" alt="" style="transform: rotate(180deg);" aria-hidden="true">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer__top">
+            <div class="container footer__container">
+                <nav class="footer__nav">
+
+                    <div class="footer__col">
+                        <button class="footer__title">Бухгалтерські послуги</button>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="/" class="footer__link">Бухгалтерські послуги для ФОП</a>
+                            </li>
+                            <li class="footer__item"><a href="/" class="footer__link">Бухгалтерські послуги для ТОВ</a>
+                            </li>
+                            <li class="footer__item"><a href="/" class="footer__link">Бухгалтерські послуги для
+                                    неприбуткових організацій</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Дія Сіті</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Кадровий облік</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Відновлення бухгалтерського
+                                    обліку</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Разові бухгалтерські послуги</a>
+                            </li>
+                            <li class="footer__item"><a href="/" class="footer__link">Аутсорсинг бухгалтерських
+                                    послуг</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <button class="footer__title">Реєстрація бізнесу</button>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="/" class="footer__link">Реєстрація ФОП</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Реєстрація ТОВ</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Ліквідація ФОП та ТОВ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <button class="footer__title">Податковий консалтинг</button>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="/" class="footer__link">Податкові консультації</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Робота з податковими органами</a>
+                            </li>
+                            <li class="footer__item"><a href="/" class="footer__link">Супровід камеральних та виїзних
+                                    перевірок</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Звітність по КІК</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Оптимізація оподаткування</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Декларація про майновий стан та
+                                    доходи фізичних осіб</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <button class="footer__title">Тарифи</button>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="/" class="footer__link">Тарифи для ТОВ</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Тарифи для ФОП</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Тарифи для НПО</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Тарифи на реєстрацію та
+                                    ліквідацію</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Розрахувати вартість супроводу</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+
+        <div class="footer__middle">
+            <div class="footer__container--middle">
+                <div class="container footer__container">
+
+                    <a href="/" class="footer__logo-link" aria-label="На головну сторінку">
+                        <img class="footer__logo" src="img/logo-footer.svg" width="172" height="41" alt="Trustum">
+                    </a>
+
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item"><a href="/" class="footer__menu-link">Про нас</a></li>
+                        <li class="footer__menu-item"><a href="/" class="footer__menu-link">Фінансова
+                                відповідальність</a>
+                        </li>
+                        <li class="footer__menu-item"><a href="/" class="footer__menu-link">Медіа</a></li>
+                        <li class="footer__menu-item"><a href="/" class="footer__menu-link">Контакти</a></li>
+                    </ul>
+
+                    <div class="footer__schedule">
+                        <h3 class="footer__subtitle">Графік роботи:</h3>
+                        <div class="footer__schedule-box">
+                            <span class="footer__schedule-text">Пн - Пт: з 9:00 по 19:00</span>
+                            <span class="footer__schedule-text">Сб: з 10:00 по 17:00</span>
+                        </div>
+                    </div>
+
+                    <address class="footer__contacts">
+                        <h3 class="footer__subtitle">Контакти:</h3>
+                        <ul class="footer__contacts-list">
+                            <li class="footer__contacts-item">
+                                <a href="tel:+380981045341" class="footer__contacts-link">+38 (098) 104 53 41,</a>
+                            </li>
+                            <li class="footer__contacts-item">
+                                <a href="tel:+380953810683" class="footer__contacts-link">+38 (095) 381 06 83</a>
+                            </li>
+                        </ul>
+
+                        <a href="mailto:info@trustum.com.ua" class="footer__email-link">info@trustum.com.ua</a>
+
+                        <ul class="footer__socials">
+                            <li class="footer__socials-item">
+                                <a href="/" class="footer__socials-link" aria-label="Telegram" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img class="footer__socials-icon" src="img/telegram.svg" width="26" height="26"
+                                        alt="" aria-hidden="true">
+                                </a>
+                            </li>
+                            <li class="footer__socials-item">
+                                <a href="/" class="footer__socials-link" aria-label="WhatsApp" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img class="footer__socials-icon" src="img/whatsapp.svg" width="26" height="26"
+                                        alt="" aria-hidden="true">
+                                </a>
+                            </li>
+                            <li class="footer__socials-item">
+                                <a href="/" class="footer__socials-link" aria-label="Viber" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img class="footer__socials-icon" src="img/viber.svg" width="26" height="26" alt=""
+                                        aria-hidden="true">
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="container footer__container footer__container--bottom">
+
+                    <div class="footer__copyright">
+                        <p class="footer__copyright-text">Trustum © 2026</p>
+                        <a href="/" class="footer__policy-link">Політика конфеденційності</a>
+                    </div>
+
+                    <a href="/" class="footer__dev-link" target="_blank" rel="noopener noreferrer">
+                        <span class="footer__dev-text"><strong class="footer__dev-brand">Розробка сайту</strong>
+                            Cursor</span>
+                        <img class="footer__dev-icon" src="img/cursor-logo.svg" width="16" height="16" alt=""
+                            aria-hidden="true">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <div class="fixed-info" aria-hidden="true">
+        <div class="fixed-info__chat">
+            <div class="fixed-info__message">
+                <span class="fixed-info__message-icons" aria-hidden="true">
+                    <img src="img/chat.svg" width="6" height="4" alt="">
+                    <img src="img/chat.svg" width="6" height="4" alt="">
+                </span>
+                <span class="fixed-info__message-text">Ми на зв’язку <br> та готові допомогти!</span>
+            </div>
+            <button class="fixed-info__call-btn" type="button" aria-controls="callback-modal">
+                Замовити <br> дзвінок
+            </button>
+        </div>
+        <button class="fixed-info__top-btn" type="button" aria-label="Повернутися вгору">
+            <img src="img/btn.svg" width="50" height="50" alt="" aria-hidden="true">
+        </button>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="modal" id="callback-modal" aria-hidden="true">
+        <div class="modal__content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="modal__close" type="button" aria-label="Закрити" data-modal-close>
+                <img src="img/close2.svg" width="24" height="24" alt="">
+            </button>
+            <h2 class="modal__title">Отримати консультацію</h2>
+            <p class="modal__text">Перша консультація безкоштовна. Розкажіть про свій бізнес — запропонуємо рішення і
+                назвемо точну ціну.</p>
+
+            <form class="feedback__form">
+
+                <div class="feedback__field">
+                    <input class="feedback__input" type="text" name="name" id="user-name-popup" placeholder="Ім’я"
+                        aria-label="Ваше ім’я" required>
+                </div>
+
+                <div class="feedback__radio-group">
+                    <p class="feedback__radio-title">Оберіть спосіб звʼязку з Вами:</p>
+                    <div class="feedback__radio-options">
+                        <label class="feedback__radio-label" for="contact-email">
+                            <input class="feedback__radio-input" type="radio" name="contact_method"
+                                id="contact-email-popup" value="email" checked>
+                            <span class="feedback__radio-text">Email</span>
+                        </label>
+                        <label class="feedback__radio-label" for="contact-phone">
+                            <input class="feedback__radio-input" type="radio" name="contact_method"
+                                id="contact-phone-popup" value="phone">
+                            <span class="feedback__radio-text">Телефон</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="feedback__field">
+                    <input class="feedback__input" type="email" name="email" id="user-email-popup" placeholder="Email"
+                        aria-label="Ваш Email" required>
+                </div>
+
+                <div class="feedback__field">
+                    <textarea class="feedback__textarea" name="message" id="user-message-popup"
+                        placeholder="Повідомлення" aria-label="Ваше повідомлення"></textarea>
+                </div>
+
+                <div class="feedback__consent">
+                    <label class="feedback__consent-label" for="user-consent">
+                        <input class="feedback__consent-input" type="checkbox" name="consent" id="user-consent-popup"
+                            required>
+                        <span class="feedback__consent-text">Погоджуюсь на обробку персональних даних</span>
+                    </label>
+                </div>
+
+                <button class="feedback__submit btn" type="submit">
+                    Надіслати
+                    <img class="feedback__submit-icon" src="img/link-arrow-black.svg" width="37" height="11" alt=""
+                        aria-hidden="true">
+                </button>
+
+                <p class="feedback__policy">Ваші дані захищені та не передаються третім особам. Відповімо протягом
+                    одного робочого дня.</p>
+            </form>
+        </div>
+    </div>
+
+    <div class="mobile-menu__overlay"></div>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <div class="mobile-menu__container">
+
+            <div class="mobile-menu__header">
+                <button class="mobile-menu__back is-hidden" id="menu-back-btn" aria-label="Повернутися назад">
+                    <img src="img/nav-prev.svg" width="27" height="24" alt="">
+                </button>
+                <button class="mobile-menu__close" id="menu-close-btn" aria-label="Закрити меню">
+                    <img src="img/close.svg" width="32" height="32" alt="">
+                </button>
+            </div>
+
+            <div class="mobile-menu__body">
+
+                <div class="mobile-menu__panel mobile-menu__panel--main is-active" id="panel-main">
+                    <nav class="mobile-menu__nav">
+                        <ul class="mobile-menu__list mobile-menu__list--primary">
+                            <li class="mobile-menu__item">
+                                <button class="mobile-menu__trigger" data-target="panel-services" aria-expanded="false">
+                                    Бухгалтерські послуги
+                                    <span class="mobile-menu__arrow">
+                                        <img src="img/nav-arrow-right.svg" width="7" height="13" alt="">
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <button class="mobile-menu__trigger" data-target="panel-registration"
+                                    aria-expanded="false">
+                                    Реєстрація бізнесу
+                                    <span class="mobile-menu__arrow">
+                                        <img src="img/nav-arrow-right.svg" width="7" height="13" alt="">
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <button class="mobile-menu__trigger" data-target="panel-consulting"
+                                    aria-expanded="false">
+                                    Податковий консалтинг
+                                    <span class="mobile-menu__arrow">
+                                        <img src="img/nav-arrow-right.svg" width="7" height="13" alt="">
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <button class="mobile-menu__trigger" data-target="panel-tarif" aria-expanded="false">
+                                    Тарифи
+                                    <span class="mobile-menu__arrow">
+                                        <img src="img/nav-arrow-right.svg" width="7" height="13" alt="">
+                                    </span>
+                                </button>
+                            </li>
+                        </ul>
+
+                        <ul class="mobile-menu__list mobile-menu__list--secondary">
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Про нас</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Фінансова
+                                    відповідальність</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Медіа</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Контакти</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="mobile-menu__contacts">
+                        <div class="mobile-menu__phones">
+                            <a href="tel:+380981045341" class="mobile-menu__phone">+38 (098) 104 53 41</a>
+                            <a href="tel:+380953810683" class="mobile-menu__phone">+38 (095) 381 06 83</a>
+                        </div>
+                        <ul class="mobile-menu__socials">
+                            <li class="mobile-menu__socials-item">
+                                <a href="/" class="mobile-menu__socials-link" aria-label="Telegram">
+                                    <img src="img/telegram.svg" width="32" height="32" alt="">
+                                </a>
+                            </li>
+                            <li class="mobile-menu__socials-item">
+                                <a href="/" class="mobile-menu__socials-link" aria-label="WhatsApp">
+                                    <img src="img/whatsapp.svg" width="32" height="32" alt="">
+                                </a>
+                            </li>
+                            <li class="mobile-menu__socials-item">
+                                <a href="/" class="mobile-menu__socials-link" aria-label="Viber">
+                                    <img src="img/viber.svg" width="32" height="32" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mobile-menu__panel mobile-menu__panel--sub" id="panel-services">
+                    <nav class="mobile-menu__nav">
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Бухгалтерські послуги
+                                    для ФОП</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Бухгалтерські послуги
+                                    для ТОВ</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Бухгалтерські послуги
+                                    для неприбуткових організацій</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Дія Сіті</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Кадровий облік</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Відновлення
+                                    бухгалтерського обліку</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Разові бухгалтерські
+                                    послуги</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Аутсорсинг
+                                    бухгалтерських послуг</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="mobile-menu__panel mobile-menu__panel--sub" id="panel-registration">
+                    <nav class="mobile-menu__nav">
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Реєстрація ФОП</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Реєстрація ТОВ</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Ліквідація ФОП та
+                                    ТОВ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="mobile-menu__panel mobile-menu__panel--sub" id="panel-consulting">
+                    <nav class="mobile-menu__nav">
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Податкові
+                                    консультації</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Робота з податковими
+                                    органами</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Супровід камеральних та
+                                    виїзних перевірок</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Звітність по КІК</a>
+                            </li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Оптимізація
+                                    оподаткування</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Декларація про майновий
+                                    стан та доходи фізичних осіб</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="mobile-menu__panel mobile-menu__panel--sub" id="panel-tarif">
+                    <nav class="mobile-menu__nav">
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Тарифи для ТОВ</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Тарифи для ФОП</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Тарифи для НПО</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Тарифи на реєстрацію та
+                                    ліквідацію</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Розрахувати вартість
+                                    супроводу</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+
+            <div class="mobile-menu__footer-fixed">
+                <div class="mobile-menu__lang">
+                    <div class="lang-dropdown lang-dropdown--menu" data-lang-dropdown>
+                        <button type="button" class="lang-dropdown__trigger" aria-haspopup="listbox"
+                            aria-expanded="false" aria-label="Вибір мови">
+                            <span class="lang-dropdown__value">Укр</span>
+                            <span class="lang-dropdown__chevron" aria-hidden="true"></span>
+                        </button>
+                        <ul class="lang-dropdown__menu" role="listbox" aria-label="Вибір мови" hidden>
+                            <li>
+                                <button type="button" class="lang-dropdown__option is-selected" role="option"
+                                    data-value="uk" data-short="Укр" aria-selected="true">Українська</button>
+                            </li>
+                            <li>
+                                <button type="button" class="lang-dropdown__option" role="option" data-value="en"
+                                    data-short="En" aria-selected="false">English</button>
+                            </li>
+                            <li>
+                                <button type="button" class="lang-dropdown__option" role="option" data-value="ru"
+                                    data-short="Ру" aria-selected="false">Русский</button>
+                            </li>
+                            <li>
+                                <button type="button" class="lang-dropdown__option" role="option" data-value="de"
+                                    data-short="De" aria-selected="false">Deutsch</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="libs/fancybox/fancybox.umd.js"></script>
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="libs/aos/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

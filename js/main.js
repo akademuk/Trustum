@@ -111,6 +111,65 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+    const casesTabsRoot = document.querySelector('[data-cases-tabs]');
+
+    if (casesTabsRoot) {
+        const tabs = casesTabsRoot.querySelectorAll('.cases__body-tab');
+        const slides = casesTabsRoot.querySelectorAll('.cases__slide');
+        const categoryKeys = ['fop', 'tov', 'audits', 'recovery', 'registration', 'kik', 'optimization'];
+        const getCasesLimit = () => (window.innerWidth > 1200 ? 9 : 6);
+
+        let currentFilter = 'all';
+
+        slides.forEach((slide, index) => {
+            if (!slide.dataset.category) {
+                slide.dataset.category = categoryKeys[index % categoryKeys.length];
+            }
+        });
+
+        const applyCasesView = () => {
+            const limit = getCasesLimit();
+            let visibleCount = 0;
+
+            slides.forEach((slide) => {
+                const matchesCategory = currentFilter === 'all' || slide.dataset.category === currentFilter;
+                const show = matchesCategory && visibleCount < limit;
+
+                if (show) {
+                    visibleCount += 1;
+                }
+
+                slide.classList.toggle('is-hidden', !show);
+                slide.hidden = !show;
+            });
+        };
+
+        const filterCases = (filter) => {
+            currentFilter = filter;
+
+            tabs.forEach((tab) => {
+                const isActive = tab.dataset.casesTab === filter;
+                tab.classList.toggle('is-active', isActive);
+                tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            });
+
+            applyCasesView();
+        };
+
+        tabs.forEach((tab) => {
+            tab.addEventListener('click', () => {
+                filterCases(tab.dataset.casesTab);
+            });
+        });
+
+        const activeTab = casesTabsRoot.querySelector('.cases__body-tab.is-active');
+        filterCases(activeTab?.dataset.casesTab || 'all');
+
+        window.addEventListener('resize', applyCasesView, { passive: true });
+    }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
 
     const casesSlider = document.querySelector('.reviews__swiper');
     
