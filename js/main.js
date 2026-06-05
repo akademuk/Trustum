@@ -195,6 +195,63 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+    const teamSlider = document.querySelector('.team__swiper');
+
+    if (!teamSlider) return;
+
+    const prevBtn = teamSlider.querySelector('.team__nav-button--prev');
+    const nextBtn = teamSlider.querySelector('.team__nav-button--next');
+    const paginationEl = teamSlider.querySelector('.team__pagination');
+
+    const updateTeamNav = (swiper) => {
+        const canScroll = !swiper.isLocked && (swiper.allowSlideNext || swiper.allowSlidePrev);
+
+        if (!canScroll) {
+            prevBtn?.setAttribute('hidden', '');
+            nextBtn?.setAttribute('hidden', '');
+            paginationEl?.classList.add('is-hidden');
+            return;
+        }
+
+        paginationEl?.classList.remove('is-hidden');
+        prevBtn?.toggleAttribute('hidden', !swiper.allowSlidePrev);
+        nextBtn?.toggleAttribute('hidden', !swiper.allowSlideNext);
+    };
+
+    const teamSwiper = new Swiper(teamSlider, {
+        slidesPerView: 'auto',
+        spaceBetween: 24,
+        watchOverflow: true,
+        observer: true,
+        observeParents: true,
+        navigation: {
+            prevEl: prevBtn,
+            nextEl: nextBtn,
+        },
+        pagination: {
+            el: paginationEl,
+            clickable: true,
+        },
+        on: {
+            init: updateTeamNav,
+            update: updateTeamNav,
+            slideChange: updateTeamNav,
+            resize: updateTeamNav,
+            reachBeginning: updateTeamNav,
+            reachEnd: updateTeamNav,
+            fromEdge: updateTeamNav,
+            lock: updateTeamNav,
+            unlock: updateTeamNav,
+        },
+    });
+
+    window.addEventListener('load', () => {
+        teamSwiper.update();
+        updateTeamNav(teamSwiper);
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
     const footerButtons = document.querySelectorAll('.footer__title');
 
     footerButtons.forEach(button => {
