@@ -127,6 +127,7 @@ body.no-scroll {
 .breadcrumbs {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -3995,7 +3996,7 @@ body.no-scroll {
   width: 100%;
   color: var(--color-text-white);
   text-align: center;
-  font-size:var(--font-size-20);
+  font-size: var(--font-size-20);
   line-height: 1.5;
 }
 
@@ -4037,7 +4038,7 @@ body.no-scroll {
   margin: 0;
 }
 
-.team__pagination .swiper-pagination-bullet  {
+.team__pagination .swiper-pagination-bullet {
   width: 18px;
   height: 18px;
   background: #7B2D8B;
@@ -4197,7 +4198,7 @@ body.no-scroll {
   z-index: 2;
 }
 
-.media__cards-item-image img{
+.media__cards-item-image img {
   width: 100%;
   height: 100%;
 }
@@ -4246,7 +4247,7 @@ body.no-scroll {
   transform: translateX(-50%);
 }
 
-.media__hero .hero__container{
+.media__hero .hero__container {
   gap: 20px;
 }
 
@@ -4265,7 +4266,7 @@ body.no-scroll {
   padding: 24px 0 56px 0;
 }
 
-.media__inner .container{
+.media__inner .container {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -4327,7 +4328,7 @@ body.no-scroll {
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.36px;
-  }
+}
 
 .media__content {
   display: flex;
@@ -4389,7 +4390,7 @@ body.no-scroll {
 }
 
 .media__content-title {
-  color:#441551;
+  color: #441551;
   font-size: var(--font-size-20);
   font-weight: 600;
   line-height: 24px;
@@ -4410,7 +4411,7 @@ body.no-scroll {
   position: relative;
   z-index: 2;
   transition: all 0.4s;
-  color:#7B2D8B;
+  color: #7B2D8B;
   font-size: var(--font-size-16);
   font-weight: 500;
   line-height: normal;
@@ -4426,7 +4427,7 @@ body.no-scroll {
   transform: translateX(-50%);
 }
 
-.media__hero-content .pagination{
+.media__hero-content .pagination {
   margin-top: 0;
 }
 
@@ -4465,19 +4466,95 @@ body.no-scroll {
   flex-direction: column;
 }
 
-.media__content--column .media__content-item{
+.media__content--column .media__content-item {
   width: 100%;
 }
 
+.single-case__hero--article .single-case__hero-header {
+  gap: 0;
+}
 
+.single-case__hero--article .sub__black {
+  margin-bottom: 24px;
+}
 
+.single-case__hero-time {
+  color: #000;
+  font-size: var(--font-size-14);
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
 
+.single-case__hero--article .single-case__hero-title {
+  margin-bottom: 24px;
+}
 
+.single-case__hero--article .single-case__hero-description {
+  font-size: var(--font-size-16);
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
+.single-case__hero--article .single-case__hero-description strong {
+  font-weight: 600;
+}
 
+.single-case__hero--article .single-case__hero-description li {
+  font-size: var(--font-size-16);
+  line-height: 1.5;
+  font-weight: 400;
+  list-style: disc;
+}
 
+.single-case__hero--article .single-case__hero-description ul,
+.single-case__hero--article .single-case__hero-description ol {
+  padding-left: 16px;
+}
 
+.single-case__hero--article .single-case__hero-description .numbered-list li{
+  list-style: decimal;
+}
 
+.single-case__hero--article .single-case__hero-description:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+
+.single-case__hero--article h2 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.single-case__hero-image {
+  max-width: 914px;
+  height: 514px;
+  width: 100%;
+  margin: 0 auto 24px auto;
+}
+
+.single-case__hero-image img,
+.single-case__hero-image video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.single-case__hero-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #7B2D8B;
+  font-size: var(--font-size-16);
+  font-weight: 500;
+  line-height: normal;
+}
 
 
 
@@ -4704,6 +4781,10 @@ body.no-scroll {
 
   .hero__title br {
     display: none;
+  }
+
+  .single-case__hero-image {
+    height: auto;
   }
 }
 
@@ -5673,7 +5754,7 @@ body.no-scroll {
 
   .team__title-description {
     font-size: 18px;
-    line-height: 30px; 
+    line-height: 30px;
   }
 
   .team__card {
@@ -5698,7 +5779,7 @@ body.no-scroll {
     font-size: 18px;
   }
 
-  .media__hero  {
+  .media__hero {
     padding-bottom: 0;
     padding-top: 40px;
   }
@@ -5710,7 +5791,7 @@ body.no-scroll {
   .media__boxs-link {
     font-size: 12px;
   }
-  
+
   .media__boxs-list {
     gap: 8px;
   }
@@ -5733,5 +5814,10 @@ body.no-scroll {
 
   .media__content-sub {
     font-size: 12px;
+  }
+
+  .single-case__hero--article h2 {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
