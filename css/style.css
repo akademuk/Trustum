@@ -4450,12 +4450,24 @@ body.no-scroll {
   gap: 66px;
 }
 
+.media__hero3 .hero__stats {
+  width: 791px;
+  min-width: 791px;
+  height: 528px;
+  transform: translateX(-50px);
+}
 
+.media__hero3 {
+  padding: 57px 0 79px 0;
+}
 
+.media__content--column {
+  flex-direction: column;
+}
 
-
-
-
+.media__content--column .media__content-item{
+  width: 100%;
+}
 
 
 
