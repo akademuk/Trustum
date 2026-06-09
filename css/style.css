@@ -27,6 +27,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: none;
 }
 
 html {
@@ -3456,12 +3457,12 @@ body.no-scroll {
 .content-column__description {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
 }
 
 .content-column__description p {
   font-size: var(--font-size-16);
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 .global-cards {
@@ -3641,6 +3642,7 @@ body.no-scroll {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
   color: #7B2D8B;
   text-align: left;
   font-size: 18px;
@@ -5270,6 +5272,11 @@ body.no-scroll {
   background: radial-gradient(40% 100.18% at 11.35% 70.75%, #7D5282 0%, #441551 100%);
 }
 
+.banner--center .container{
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
 
 
 
@@ -6093,7 +6100,7 @@ body.no-scroll {
 
   .single-case__result-value {
     font-size: 22px;
-    line-height: 24px;
+    line-height: 22px;
   }
 
   .single-case__result-label {
