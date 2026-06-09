@@ -479,31 +479,43 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const faqItems = document.querySelectorAll('.faq__accardion-item');
+    document.querySelectorAll('.faq__accardion').forEach((accordion) => {
+        const faqItems = accordion.querySelectorAll('.faq__accardion-item');
 
-    faqItems.forEach((item) => {
-        const btn = item.querySelector('.faq__accardion-title');
-        const content = item.querySelector('.faq__accardion-content');
+        faqItems.forEach((item) => {
+            const btn = item.querySelector('.faq__accardion-title');
+            const content = item.querySelector('.faq__accardion-content');
 
-        if (!btn || !content) return;
+            if (!btn || !content) return;
 
-        btn.setAttribute('aria-expanded', 'false');
-        content.setAttribute('aria-hidden', 'true');
+            btn.setAttribute('aria-expanded', 'false');
+            content.setAttribute('aria-hidden', 'true');
 
-        btn.addEventListener('click', () => {
-            const isOpen = item.classList.contains('is-active');
+            btn.addEventListener('click', () => {
+                const isOpen = item.classList.contains('is-active');
 
-            faqItems.forEach((other) => {
-                if (other === item) return;
+                faqItems.forEach((other) => {
+                    if (other === item) return;
 
-                other.classList.remove('is-active');
-                other.querySelector('.faq__accardion-title')?.setAttribute('aria-expanded', 'false');
-                other.querySelector('.faq__accardion-content')?.setAttribute('aria-hidden', 'true');
+                    other.classList.remove('is-active');
+                    other.querySelector('.faq__accardion-title')?.setAttribute('aria-expanded', 'false');
+                    other.querySelector('.faq__accardion-content')?.setAttribute('aria-hidden', 'true');
+                });
+
+                item.classList.toggle('is-active', !isOpen);
+                btn.setAttribute('aria-expanded', !isOpen ? 'true' : 'false');
+                content.setAttribute('aria-hidden', !isOpen ? 'false' : 'true');
             });
-
-            item.classList.toggle('is-active', !isOpen);
-            btn.setAttribute('aria-expanded', !isOpen ? 'true' : 'false');
-            content.setAttribute('aria-hidden', !isOpen ? 'false' : 'true');
         });
+
+        const firstItem = faqItems[0];
+        const firstBtn = firstItem?.querySelector('.faq__accardion-title');
+        const firstContent = firstItem?.querySelector('.faq__accardion-content');
+
+        if (!firstItem || !firstBtn || !firstContent) return;
+
+        firstItem.classList.add('is-active');
+        firstBtn.setAttribute('aria-expanded', 'true');
+        firstContent.setAttribute('aria-hidden', 'false');
     });
 });
