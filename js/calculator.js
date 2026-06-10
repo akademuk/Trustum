@@ -101,6 +101,10 @@
 
     const calculatorType = section.dataset.calculatorType || 'tabs';
     const isFopOnly = calculatorType === 'fop';
+    const tabButtons = section.querySelectorAll('[data-calculator-tab]');
+    const hasTabs = tabButtons.length > 0;
+
+    let activeLegalForm = section.dataset.activeLegalForm || 'fop';
 
     const priceValueEl = section.querySelector('.calculator__price-value');
     const priceCurrencyEl = section.querySelector('.calculator__price-currency');
@@ -115,7 +119,29 @@
 
     const getLegalForm = () => {
         if (isFopOnly) return 'fop';
+        if (hasTabs) return activeLegalForm;
         return getChecked('legal_form')?.value || 'fop';
+    };
+
+    const setLegalFormTab = (form) => {
+        if (form !== 'fop' && form !== 'tov') return;
+
+        activeLegalForm = form;
+        section.dataset.activeLegalForm = form;
+
+        tabButtons.forEach((btn) => {
+            const isActive = btn.dataset.calculatorTab === form;
+            btn.classList.toggle('is-active', isActive);
+            btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        });
+
+        if (form === 'tov' && taxSingle2?.checked && taxSingle35) {
+            taxSingle35.checked = true;
+            resetPrroIfNeeded(taxSingle35.value);
+        }
+
+        updateTaxOptions();
+        calculate();
     };
 
     const getOperationsPrice = (legalForm, taxSystem, count) => {
@@ -187,9 +213,12 @@
         const isFop = legalForm === 'fop';
         const taxSystem = getChecked('tax_system')?.value;
 
-        if (!isFopOnly) {
+        if (hasTabs || !isFopOnly) {
             fopOnlyTaxOptions.forEach((option) => {
-                option.hidden = !isFop;
+                const showOption = isFop;
+                option.hidden = !showOption;
+                option.classList.toggle('is-hidden', !showOption);
+                option.querySelector('.feedback__radio-input')?.toggleAttribute('disabled', !showOption);
             });
 
             if (!isFop && taxSingle2?.checked && taxSingle35) {
@@ -197,8 +226,12 @@
             }
         }
 
-        if (prroGroup && !isFopOnly) {
-            prroGroup.hidden = !(isFop && taxSystem === 'single-2');
+        if (prroGroup) {
+            if (isFopOnly) {
+                prroGroup.hidden = false;
+            } else {
+                prroGroup.hidden = !(isFop && taxSystem === 'single-2');
+            }
         }
     };
 
@@ -311,6 +344,12 @@
             input.checked = false;
         });
     };
+
+    tabButtons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            setLegalFormTab(btn.dataset.calculatorTab);
+        });
+    });
 
     section.addEventListener('change', (event) => {
         const { target } = event;
