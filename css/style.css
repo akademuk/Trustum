@@ -3545,8 +3545,8 @@ body.no-scroll {
 }
 
 .global-cards__icon {
-  width: 56px;
-  height: 56px;
+  width: 50px;
+  height: 50px;
   flex-shrink: 0;
   left: 0;
   position: relative;
@@ -5049,6 +5049,35 @@ body.no-scroll {
   text-align: center;
   font-size: 18px;
   line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.calculator__text2 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.calculator__text2 p{
+  text-align: left;
+}
+
+.calculator__text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-left: 20px;
+}
+
+.calculator__text ul li {
+  list-style: disc;
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: left;
 }
 
 .calculator__box {
@@ -5642,24 +5671,131 @@ body.no-scroll {
   outline: none; 
 }
 
+.single-case__hero-header--prices {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 
+.single-case__hero-header-box {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
 
+.prcie__boxs-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+}
 
+.prcie__boxs {
+  display: flex;
+  flex-direction: column;
+  width: calc(33.33% - (32px / 3));
+  padding: 16px 16px 24px 16px;
+  align-items: flex-start;
+  gap: 16px;
+  height: auto;
+  border-radius: 32px;
+  background: var(--color-title-white);
+  box-shadow: 0 0 22.7px 0 rgba(210, 179, 229, 0.35);
+}
 
+.prcie__boxs-header {
+  display: flex;
+  padding: 24px 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: 23px;
+  background: #F0F0F0;
+}
 
+.prcie__boxs-title {
+  color: #441551;
+  text-align: center;
+  font-size: var(--font-size-20);
+  font-weight: 600;
+  line-height: 26px;
+}
 
+.prcie__boxs-description {
+  color: var(--color-text-green);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.18px;
+}
 
+.prcie__boxs-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
 
+.prcie__boxs-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 133%;
+}
 
+.prcie__boxs-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
 
+.prcie__boxs-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
 
+.prcie__boxs-item-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
 
+.prcie__boxs-item-text {
+  font-size: var(--font-size-16);
+  line-height: 133%;
+}
 
+.work-practice__content-header {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
 
+.work-practice__content-subtitle {
+  color: var(--color-title-white);
+  text-align: center;
+  font-size: var(--font-size-20);
+  font-weight: 400;
+  line-height: 1.5;
+}
 
-
-
-
+.work-practice__title-description {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: var(--color-title-white);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+}
 
 
 
@@ -5912,6 +6048,14 @@ body.no-scroll {
 
   .jurisdictions__body-item {
     flex: 1;
+  }
+
+  .prcie__boxs-section {
+    flex-direction: column;
+  }
+
+  .prcie__boxs {
+    width: 100%;
   }
 }
 
@@ -7330,5 +7474,69 @@ body.no-scroll {
   .section-table__card  .section-table__card-btn {
     padding: 18px 16px;
     font-size: var(--font-size-14);
+  }
+
+  .single-case__hero-header--prices {
+    gap: 32px;
+  }
+
+  .prcie__boxs-section {
+    gap: 24px;
+  }
+
+  .prcie__boxs {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .prcie__boxs-header {
+    padding: 16px 0;
+    gap: 8px;
+    border-radius: 16px;
+  }
+
+  .prcie__boxs-title {
+    font-size: 18px;
+    line-height: 22px; 
+  }
+
+  .prcie__boxs-description {
+    font-size: var(--font-size-20);
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+  }
+
+  .prcie__boxs-subtitle {
+    font-size: var(--font-size-16);
+  }
+
+  .prcie__boxs-item-text {
+    font-size: var(--font-size-14);
+  }
+
+  .calculator__text ul li {
+    font-size: var(--font-size-16);
+  }
+
+  .calculator__text2 {
+    font-size: var(--font-size-16);
+  }
+
+  .work-practice__content-header {
+    gap: 24px;
+  }
+
+  .work-practice__content-subtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .work-practice__title-description {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .work-practice__content .container {
+    gap: 40px;
   }
 }
