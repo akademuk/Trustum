@@ -6267,8 +6267,16 @@ ul.global-cards__info-item-description {
   transform: translate(-50%, -50%) rotate(-90deg);
 }
 
+.single-case__hero-header--prices--tov .prcie__boxs-section{
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: stretch;
+}
 
-
+.single-case__hero-header--prices--tov .prcie__boxs-section .prcie__boxs {
+  width: calc(50% - 16px);
+  padding: 32px;
+}
 
 
 
@@ -6568,6 +6576,10 @@ ul.global-cards__info-item-description {
 
   .process__step:nth-of-type(4)::before {
     content: "";
+  }
+  
+  .single-case__hero-header--prices--tov .prcie__boxs-section .prcie__boxs {
+    width: 100%;
   }
 }
 
@@ -8245,5 +8257,9 @@ ul.global-cards__info-item-description {
     top: -18px;
     transform: none;
     left: 20px;
+  }
+
+  .single-case__hero-header--prices--tov .prcie__boxs-section .prcie__boxs {
+    padding: 16px;
   }
 }
