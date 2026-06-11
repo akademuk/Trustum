@@ -6091,10 +6091,16 @@ ul.global-cards__info-item-description {
 .industry-specific .global-cards__item {
   width: calc(25% - 18px);
   border-radius: 32px;
-  background: var(--color-title-white);
+  background: #fff;
   box-shadow: 0 0 22.7px 0 rgba(210, 179, 229, 0.35);
   min-width: 220px;
   flex: 1;
+}
+
+.industry-specific--center .global-cards__item {
+  background: #E4E0EF;
+  align-items: center;
+  box-shadow: none;
 }
 
 .industry-specific .global-cards__item:hover .global-cards__item-title {
@@ -6278,10 +6284,19 @@ ul.global-cards__info-item-description {
   padding: 32px;
 }
 
+.industry-specific--center .global-cards__item-title {
+  color: #252525;
+  text-align: center;
+}
 
+.industry-specific--center .global-cards__item-text {
+  text-align: center;
+}
 
-
-
+.industry-specific--center .global-cards__item:hover .global-cards__icon {
+  transform: none;
+  left: 0;
+}
 
 
 
