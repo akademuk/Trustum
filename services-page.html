@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Бухгалтерія, яка бере відповідальність</title>
+
+    <noscript>
+        <link rel="stylesheet" href="libs/fancybox/fancybox.css" />
+        <link rel="stylesheet" href="libs/swiper/swiper-min.css" />
+    </noscript>
+
+    <link rel="stylesheet" href="libs/aos/aos.css" />
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__top">
+            <div class="container header__container">
+                <a href="/" class="header__logo-link" aria-label="На головну сторінку">
+                    <img class="header__logo-img" src="img/logo.svg" width="231" height="55" alt="Логотип компанії">
+                </a>
+
+                <nav class="header__top-nav">
+                    <ul class="header__top-list">
+                        <li class="header__top-item"><a href="/" class="header__top-link">Про нас</a></li>
+                        <li class="header__top-item"><a href="/" class="header__top-link">Фінансова відповідальність</a>
+                        </li>
+                        <li class="header__top-item"><a href="/" class="header__top-link">Медіа</a></li>
+                        <li class="header__top-item"><a href="/" class="header__top-link">Контакти</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__contacts">
+                    <ul class="header__phones">
+                        <li class="header__phones-item">
+                            <a href="tel:+380981045341" class="header__phones-link">+38 (098) 104 53 41</a>
+                        </li>
+                        <li class="header__phones-item">
+                            <a href="tel:+380953810683" class="header__phones-link">+38 (095) 381 06 83</a>
+                        </li>
+                    </ul>
+
+                    <div class="header__lang">
+                        <div class="lang-dropdown lang-dropdown--desktop" data-lang-dropdown>
+                            <button type="button" class="lang-dropdown__trigger" id="lang-select"
+                                aria-haspopup="listbox" aria-expanded="false" aria-label="Вибір мови">
+                                <span class="lang-dropdown__value">Укр</span>
+                                <span class="lang-dropdown__chevron" aria-hidden="true"></span>
+                            </button>
+                            <ul class="lang-dropdown__menu" role="listbox" aria-label="Вибір мови">
+                                <li>
+                                    <button type="button" class="lang-dropdown__option is-selected" role="option"
+                                        data-value="uk" data-short="Укр" aria-selected="true">Українська</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="lang-dropdown__option" role="option" data-value="ru"
+                                        data-short="Ру" aria-selected="false">Русский</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__top-mobile">
+                    <a href="#contacts" class="header__mobile-contact" aria-label="Зв'язатися з нами">
+                        <img class="header__mobile-icon" src="img/contact.svg" width="32" height="32" alt="">
+                    </a>
+
+                    <button type="button" class="burger" aria-label="Відкрити меню" aria-expanded="false">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__main">
+            <div class="container header__container">
+                <nav class="header__main-nav">
+                    <ul class="header__main-list">
+                        <li class="header__main-item">
+                            <a href="/" class="header__main-link">Бухгалтерські послуги</a>
+
+                            <div class="header__submenu">
+                                <ul class="header__submenu-list">
+                                    <li class="header__submenu-item"><a href="/"
+                                            class="header__submenu-link">Бухгалтерські
+                                            послуги для ФОП</a></li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Кадровий
+                                            облік</a>
+                                    </li>
+                                    <li class="header__submenu-item"><a href="/"
+                                            class="header__submenu-link">Бухгалтерські
+                                            послуги для ТОВ</a></li>
+                                    <li class="header__submenu-item"><a href="/"
+                                            class="header__submenu-link">Відновлення
+                                            бухгалтерського обліку</a></li>
+                                    <li class="header__submenu-item"><a href="/"
+                                            class="header__submenu-link">Бухгалтерські
+                                            послуги для неприбуткових організацій</a></li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Разові
+                                            бухгалтерські послуги</a></li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Дія
+                                            Сіті</a></li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Аутсорсинг
+                                            бухгалтерських послуг</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__main-item">
+                            <a href="/" class="header__main-link">Реєстрація бізнесу</a>
+
+                            <div class="header__submenu">
+                                <ul class="header__submenu-list">
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Реєстрація
+                                            ФОП</a></li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Реєстрація
+                                            ТОВ</a>
+                                    </li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Ліквідація
+                                            ФОП та ТОВ</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__main-item">
+                            <a href="/" class="header__main-link">Податковий консалтинг</a>
+
+                            <div class="header__submenu">
+                                <ul class="header__submenu-list">
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Податкові
+                                            консультації</a></li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Робота з
+                                            податковими органами</a>
+                                    </li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Супровід
+                                            камеральних та виїзних
+                                            перевірок</a></li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Звітність
+                                            по КІК</a></li>
+                                    <li class="header__submenu-item"><a href="/"
+                                            class="header__submenu-link">Оптимізація оподаткування</a></li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Декларація
+                                            про майновий стан та
+                                            доходи фізичних осіб</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__main-item">
+                            <a href="/" class="header__main-link">Тарифи</a>
+
+                            <div class="header__submenu">
+                                <ul class="header__submenu-list">
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Тарифи для
+                                            ТОВ</a></li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Тарифи для
+                                            ФОП</a></li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Тарифи для
+                                            НПО</a></li>
+                                    <li class="header__submenu-item"><a href="/" class="header__submenu-link">Тарифи на
+                                            реєстрацію та
+                                            ліквідацію</a></li>
+                        </li>
+                        <li class="header__submenu-item"><a href="/" class="header__submenu-link">Розрахувати вартість
+                                супроводу</a></li>
+                    </ul>
+            </div>
+            </li>
+
+            </ul>
+            </nav>
+
+            <ul class="header__socials">
+                <li class="header__socials-item">
+                    <a href="/" target="_blank" rel="noopener noreferrer" class="header__socials-link"
+                        aria-label="Наш Telegram">
+                        <img class="header__socials-icon" src="img/telegram.svg" width="26" height="26" alt="">
+                    </a>
+                </li>
+                <li class="header__socials-item">
+                    <a href="/" target="_blank" rel="noopener noreferrer" class="header__socials-link"
+                        aria-label="Наш WhatsApp">
+                        <img class="header__socials-icon" src="img/whatsapp.svg" width="26" height="26" alt="">
+                    </a>
+                </li>
+                <li class="header__socials-item">
+                    <a href="/" target="_blank" rel="noopener noreferrer" class="header__socials-link"
+                        aria-label="Наш Viber">
+                        <img class="header__socials-icon" src="img/viber.svg" width="26" height="26" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="purchasing">
+            <div class="container">
+                <h2 class="purchasing__title">Придбання готової компанії</h2>
+                <div class="purchasing__content">
+                    <h3 class="purchasing__content-title">Коли це доцільно:</h3>
+                    <div class="purchasing__content-description">
+                        <p>Найпоширеніша причина — участь у тендерах або держзакупівлях, де вимагається певний строк
+                            існування компанії. Також придбання готової ТОВ актуальне при необхідності швидкого
+                            відкриття рахунку в банку, що неохоче відкриває рахунки новим компаніям, або при роботі з
+                            іноземними партнерами, для яких важлива «зрілість» юридичної особи.</p>
+                    </div>
+                </div>
+                <div class="purchasing__box">
+                    <h3 class="purchasing__content-title">Що ми перевіряємо перед угодою:</h3>
+
+                    <div class="purchasing__list">
+                        <div class="purchasing__item" data-aos="fade-up">
+                            <div class="purchasing__item-image">
+                                <img src="img/constructing__advantages-icon2.svg" width="50" height="50" alt=""
+                                    aria-hidden="true">
+                            </div>
+                            <div class="purchasing__item-content">
+                                <h3 class="purchasing__item-title">Юридична чистота —</h3>
+                                <div class="purchasing__item-description">
+                                    <p>відсутність судових справ, виконавчих проваджень і претензій кредиторів. Навіть
+                                        дрібний неоплачений штраф може стати проблемою після переходу права власності.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="purchasing__item" data-aos="fade-up">
+                            <div class="purchasing__item-image">
+                                <img src="img/constructing__advantages-icon2.svg" width="50" height="50" alt=""
+                                    aria-hidden="true">
+                            </div>
+                            <div class="purchasing__item-content">
+                                <h3 class="purchasing__item-title">Податкова чистота —</h3>
+                                <div class="purchasing__item-description">
+                                    <p>відсутність боргів перед бюджетом, поданість усієї звітності, відсутність на
+                                        обліку в ДПС як ризиковий платник.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="purchasing__item" data-aos="fade-up">
+                            <div class="purchasing__item-image">
+                                <img src="img/constructing__advantages-icon2.svg" width="50" height="50" alt=""
+                                    aria-hidden="true">
+                            </div>
+                            <div class="purchasing__item-content">
+                                <h3 class="purchasing__item-title">Репутація в реєстрах —</h3>
+                                <div class="purchasing__item-description">
+                                    <p>перевіряємо компанію у реєстрі боржників, реєстрі підприємств з ознаками
+                                        фіктивності, базах даних судових рішень.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="purchasing__item" data-aos="fade-up">
+                            <div class="purchasing__item-image">
+                                <img src="img/constructing__advantages-icon2.svg" width="50" height="50" alt=""
+                                    aria-hidden="true">
+                            </div>
+                            <div class="purchasing__item-content">
+                                <h3 class="purchasing__item-title">Активи та зобов'язання —</h3>
+                                <div class="purchasing__item-description">
+                                    <p>готова компанія не повинна мати прихованих зобов'язань, майна з обтяженнями або
+                                        невиконаних договорів.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process">
+            <div class="container">
+                <h2 class="process__title">Процес придбання готової компанії</h2>
+                <div class="process__steps">
+                    <div class="process__step" data-aos="fade-up">
+                        <span class="process__step-number">01</span>
+                        <p class="process__step-text">Визначення вимог до компанії (вік, система оподаткування,
+                            відсутність ПДВ-історії тощо)</p>
+                    </div>
+                    <div class="process__step" data-aos="fade-up">
+                        <span class="process__step-number">02</span>
+                        <p class="process__step-text">Підбір варіантів із нашої бази або на ринку</p>
+                    </div>
+                    <div class="process__step" data-aos="fade-up">
+                        <span class="process__step-number">03</span>
+                        <p class="process__step-text">Due diligence — перевірка юридичної та податкової чистоти</p>
+                    </div>
+                    <div class="process__step" data-aos="fade-up">
+                        <span class="process__step-number">04</span>
+                        <p class="process__step-text">Оформлення договору купівлі-продажу частки</p>
+                    </div>
+                    <div class="process__step" data-aos="fade-up">
+                        <span class="process__step-number">05</span>
+                        <p class="process__step-text">Реєстрація зміни власника в ЄДР</p>
+                    </div>
+                    <div class="process__step" data-aos="fade-up">
+                        <span class="process__step-number">06</span>
+                        <p class="process__step-text">Зміна директора, юридичної адреси та інших реквізитів за потреби
+                        </p>
+                    </div>
+                    <div class="process__step" data-aos="fade-up">
+                        <span class="process__step-number">07</span>
+                        <p class="process__step-text">Переоформлення банківського рахунку</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="closing">
+            <div class="container">
+                <h2 class="closing__title">Закриття ФОП</h2>
+                <div class="closing__content">
+                    <h3 class="closing__content-title">Що відбувається після подачі заяви:</h3>
+                    <div class="closing__content-description">
+                        <p>Реєстраційна дія — один робочий день. Але зняття з обліку в ДПС та ПФУ — окрема процедура,
+                            яка вимагає підготовки та подачі фінальної звітності і може тривати від кількох тижнів до
+                            кількох місяців залежно від наявності боргів і призначення перевірки.
+                        <p>
+                    </div>
+                    <h3 class="closing__content-title">Що ми робимо:</h3>
+                    <div class="closing__content-description">
+                        <p>Перевіряємо стан розрахунків із бюджетом — чи немає прихованих боргів із ЄСВ, ПДФО, єдиного
+                            податку. Готуємо та подаємо фінальну звітність за останній звітний період, формуємо і
+                            подаємо ліквідаційну декларацію, закриваємо реєстрацію платника ПДВ за наявності,
+                            супроводжуємо до отримання довідки про відсутність заборгованості та повного зняття з
+                            обліку.
+                        <p>
+                    </div>
+                    <h3 class="closing__content-title">Окремо: ФОП з боргами</h3>
+                    <div class="closing__content-description">
+                        <p>Якщо є накопичений борг з ЄСВ або податків — спочатку аналізуємо його реальний розмір і
+                            склад. Частина штрафів може бути оскаржена або списана за строком давності. Розробляємо
+                            оптимальну стратегію закриття з мінімальними фінансовими втратами.
+                        <p>
+                    </div>
+                    <h3 class="closing__content-title">Строки:</h3>
+                    <div class="closing__content-description">
+                        <p>При відсутності боргів і коректній звітності — 2–4 тижні від подачі заяви до повного зняття з
+                            обліку. При наявності боргів або призначенні перевірки — 2–6 місяців.
+                        <p>
+                    </div>
+                </div>
+                <div class="section-table__card">
+                    <h3 class="section-table__card-title">Хочете закрити ФОП?</h3>
+                    <div class="section-table__card-box">
+                        <p class="section-table__card-description">Перевіримо стан розрахунків із бюджетом безкоштовно —
+                            дізнайтесь реальну суму до початку процедури.</p>
+                        <a href="/" class="section-table__card-btn btn">
+                            Перевірити стан ФОП
+                            <img class="section-table__card-btn-icon" src="img/link-arrow.svg" width="37" height="11"
+                                alt="" aria-hidden="true">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="global-cards global-cards--small-text global-cards--white">
+            <div class="container">
+                <div class="global-cards__header">
+                    <h2 class="global-cards__title">Реєстрація нового ТОВ</h2>
+                    <div class="global-cards__description">
+                        <p>Що потрібно вирішити до реєстрації:</p>
+                    </div>
+                </div>
+                <div class="global-cards__body">
+                    <div class="global-cards__list">
+                        <div class="global-cards__item" data-aos="fade-up" data-aos-delay="0">
+                            <div class="global-cards__icon">
+                                <img src="img/constructing__advantages-icon2.svg" width="56" height="56" alt="">
+                            </div>
+                            <div class="global-cards__content">
+                                <h3 class="global-cards__item-title">Назва компанії</h3>
+                                <p class="global-cards__item-text">— перевіряємо унікальність і відсутність схожих назв
+                                    у ЄДР, щоб уникнути відмови в реєстрації або претензій від власників схожих брендів.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="global-cards__item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="global-cards__icon">
+                                <img src="img/constructing__advantages-icon2.svg" width="56" height="56" alt="">
+                            </div>
+                            <div class="global-cards__content">
+                                <h3 class="global-cards__item-title">Юридична адреса</h3>
+                                <p class="global-cards__item-text">— обов'язковий реквізит. Може бути домашня адреса
+                                    засновника, офіс або адреса реєстраційного агента. Консультуємо щодо ризиків кожного
+                                    варіанту.</p>
+                            </div>
+                        </div>
+                        <div class="global-cards__item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="global-cards__icon">
+                                <img src="img/constructing__advantages-icon2.svg" width="56" height="56" alt="">
+                            </div>
+                            <div class="global-cards__content">
+                                <h3 class="global-cards__item-title">Розмір і формування статутного капіталу</h3>
+                                <p class="global-cards__item-text">— мінімум законом не встановлений, але розмір впливає
+                                    на ліміти деяких операцій та сприйняття компанії контрагентами.</p>
+                            </div>
+                        </div>
+                        <div class="global-cards__item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="global-cards__icon">
+                                <img src="img/constructing__advantages-icon2.svg" width="56" height="56" alt="">
+                            </div>
+                            <div class="global-cards__content">
+                                <h3 class="global-cards__item-title">Розподіл часток між засновниками</h3>
+                                <p class="global-cards__item-text"> — якщо засновників кілька, фіксуємо частки у статуті
+                                    та корпоративному договорі. Типові помилки на цьому етапі коштують дорого при
+                                    корпоративних конфліктах.</p>
+                            </div>
+                        </div>
+                        <div class="global-cards__item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="global-cards__icon">
+                                <img src="img/constructing__advantages-icon2.svg" width="56" height="56" alt="">
+                            </div>
+                            <div class="global-cards__content">
+                                <h3 class="global-cards__item-title">Система оподаткування
+                                </h3>
+                                <p class="global-cards__item-text">— так само, як і для ФОП, вибір між ЄП 3 групи та
+                                    загальною системою робиться при реєстрації. Аналізуємо і рекомендуємо.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="global-cards__info">
+                    <div class="global-cards__info-item">
+                        <h3 class="global-cards__info-item-title">Що готуємо ми:</h3>
+                        <div class="global-cards__info-item-description">
+                            <p>Статут ТОВ з урахуванням специфіки вашого бізнесу, рішення засновника або протокол
+                                загальних зборів, заяву про державну реєстрацію, заяву про обрання системи
+                                оподаткування, пакет документів для відкриття банківського рахунку.</p>
+                        </div>
+                    </div>
+                    <div class="global-cards__info-item">
+                        <h3 class="global-cards__info-item-title">Процес:<h3>
+                                <ul class="global-cards__info-item-description">
+                                    <li>Консультація щодо структури та системи оподаткування — 1 день</li>
+                                    <li>Підготовка статуту та документів — 1–2 дні</li>
+                                    <li>Подача документів до державного реєстратора — 1 день</li>
+                                    <li>Отримання виписки з ЄДР та внесення до реєстрів — 1 робочий день</li>
+                                    <li>Відкриття рахунку та постреєстраційні дії — 2–3 дні</li>
+                                </ul>
+                    </div>
+                </div>
+                <div class="section-table__card section-table__card--gradient">
+                    <h3 class="section-table__card-title">Готові реєструватись?</h3>
+                    <div class="section-table__card-box">
+                        <p class="section-table__card-description">Залиште заявку — зателефонуємо протягом дня та
+                            узгодимо зручний час для реєстрації</p>
+                        <a href="/" class="section-table__card-btn btn">
+                            Зареєструвати ТОВ
+                            <img class="section-table__card-btn-icon btn" src="img/link-arrow.svg" width="37"
+                                height="11" alt="" aria-hidden="true">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <h1 class="hero__title"><span>Реєстрація ФОП - секції</span></h1>
+
+
+        <section class="industry-specific">
+            <div class="container">
+                <h2 class="industry-specific__title">Галузева специфіка</h2>
+                <div class="global-cards__body">
+                    <div class="global-cards__list">
+                        <div class="global-cards__item" data-aos="fade-up" data-aos-delay="0">
+                            <div class="global-cards__icon">
+                                <img src="img/constructing__advantages-icon1.svg" width="56" height="56" alt="">
+                            </div>
+                            <div class="global-cards__content">
+                                <h3 class="global-cards__item-title">Торгівля:</h3>
+                                <p class="global-cards__item-text">Облік товарних залишків, інвентаризація, РРО, повернення від покупців.</p>
+                            </div>
+                        </div>
+                        <div class="global-cards__item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="global-cards__icon">
+                                <img src="img/constructing__advantages-icon1.svg" width="56" height="56" alt="">
+                            </div>
+                            <div class="global-cards__content">
+                                <h3 class="global-cards__item-title">Послуги:</h3>
+                                <p class="global-cards__item-text">Правильне оформлення актів, авансові платежі, договори з фізичними особами.</p>
+                            </div>
+                        </div>
+                        <div class="global-cards__item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="global-cards__icon">
+                                <img src="img/constructing__advantages-icon1.svg" width="56" height="56" alt="">
+                            </div>
+                            <div class="global-cards__content">
+                                <h3 class="global-cards__item-title">Виробництво:</h3>
+                                <p class="global-cards__item-text">Калькуляція собівартості, облік сировини та готової продукції, незавершене виробництво.</p>
+                            </div>
+                        </div>
+                        <div class="global-cards__item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="global-cards__icon">
+                                <img src="img/constructing__advantages-icon1.svg" width="56" height="56" alt="">
+                            </div>
+                            <div class="global-cards__content">
+                                <h3 class="global-cards__item-title">Будівництво:
+                                </h3>
+                                <p class="global-cards__item-text">КБ-2, КБ-3, облік субпідряду, поетапне визнання доходів.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-table__card section-table__card--gradient">
+                    <div class="section-table__card-box">
+                        <p class="section-table__card-description">Якщо вашого виду діяльності немає в списку — запитайте: 
+                            ми обслуговуємо компанії з будь-якою специфікою.</p>
+                        <a href="/" class="section-table__card-btn btn">
+                            Отримати консультацію
+                            <img class="section-table__card-btn-icon btn" src="img/link-arrow.svg" width="37"
+                                height="11" alt="" aria-hidden="true">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer__top">
+            <div class="container footer__container">
+                <nav class="footer__nav">
+
+                    <div class="footer__col">
+                        <button class="footer__title">Бухгалтерські послуги</button>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="/" class="footer__link">Бухгалтерські послуги для ФОП</a>
+                            </li>
+                            <li class="footer__item"><a href="/" class="footer__link">Бухгалтерські послуги для ТОВ</a>
+                            </li>
+                            <li class="footer__item"><a href="/" class="footer__link">Бухгалтерські послуги для
+                                    неприбуткових організацій</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Дія Сіті</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Кадровий облік</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Відновлення бухгалтерського
+                                    обліку</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Разові бухгалтерські послуги</a>
+                            </li>
+                            <li class="footer__item"><a href="/" class="footer__link">Аутсорсинг бухгалтерських
+                                    послуг</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <button class="footer__title">Реєстрація бізнесу</button>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="/" class="footer__link">Реєстрація ФОП</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Реєстрація ТОВ</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Ліквідація ФОП та ТОВ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <button class="footer__title">Податковий консалтинг</button>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="/" class="footer__link">Податкові консультації</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Робота з податковими органами</a>
+                            </li>
+                            <li class="footer__item"><a href="/" class="footer__link">Супровід камеральних та виїзних
+                                    перевірок</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Звітність по КІК</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Оптимізація оподаткування</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Декларація про майновий стан та
+                                    доходи фізичних осіб</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <button class="footer__title">Тарифи</button>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="/" class="footer__link">Тарифи для ТОВ</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Тарифи для ФОП</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Тарифи для НПО</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Тарифи на реєстрацію та
+                                    ліквідацію</a></li>
+                            <li class="footer__item"><a href="/" class="footer__link">Розрахувати вартість супроводу</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+
+        <div class="footer__middle">
+            <div class="footer__container--middle">
+                <div class="container footer__container">
+
+                    <a href="/" class="footer__logo-link" aria-label="На головну сторінку">
+                        <img class="footer__logo" src="img/logo-footer.svg" width="172" height="41" alt="Trustum">
+                    </a>
+
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item"><a href="/" class="footer__menu-link">Про нас</a></li>
+                        <li class="footer__menu-item"><a href="/" class="footer__menu-link">Фінансова
+                                відповідальність</a>
+                        </li>
+                        <li class="footer__menu-item"><a href="/" class="footer__menu-link">Медіа</a></li>
+                        <li class="footer__menu-item"><a href="/" class="footer__menu-link">Контакти</a></li>
+                    </ul>
+
+                    <div class="footer__schedule">
+                        <h3 class="footer__subtitle">Графік роботи:</h3>
+                        <div class="footer__schedule-box">
+                            <span class="footer__schedule-text">Пн - Пт: з 9:00 по 19:00</span>
+                            <span class="footer__schedule-text">Сб: з 10:00 по 17:00</span>
+                        </div>
+                    </div>
+
+                    <address class="footer__contacts">
+                        <h3 class="footer__subtitle">Контакти:</h3>
+                        <ul class="footer__contacts-list">
+                            <li class="footer__contacts-item">
+                                <a href="tel:+380981045341" class="footer__contacts-link">+38 (098) 104 53 41,</a>
+                            </li>
+                            <li class="footer__contacts-item">
+                                <a href="tel:+380953810683" class="footer__contacts-link">+38 (095) 381 06 83</a>
+                            </li>
+                        </ul>
+
+                        <a href="mailto:info@trustum.com.ua" class="footer__email-link">info@trustum.com.ua</a>
+
+                        <ul class="footer__socials">
+                            <li class="footer__socials-item">
+                                <a href="/" class="footer__socials-link" aria-label="Telegram" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img class="footer__socials-icon" src="img/telegram.svg" width="26" height="26"
+                                        alt="" aria-hidden="true">
+                                </a>
+                            </li>
+                            <li class="footer__socials-item">
+                                <a href="/" class="footer__socials-link" aria-label="WhatsApp" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img class="footer__socials-icon" src="img/whatsapp.svg" width="26" height="26"
+                                        alt="" aria-hidden="true">
+                                </a>
+                            </li>
+                            <li class="footer__socials-item">
+                                <a href="/" class="footer__socials-link" aria-label="Viber" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img class="footer__socials-icon" src="img/viber.svg" width="26" height="26" alt=""
+                                        aria-hidden="true">
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="container footer__container footer__container--bottom">
+
+                    <div class="footer__copyright">
+                        <p class="footer__copyright-text">Trustum © 2026</p>
+                        <a href="/" class="footer__policy-link">Політика конфеденційності</a>
+                    </div>
+
+                    <a href="/" class="footer__dev-link" target="_blank" rel="noopener noreferrer">
+                        <span class="footer__dev-text"><strong class="footer__dev-brand">Розробка сайту</strong>
+                            Cursor</span>
+                        <img class="footer__dev-icon" src="img/cursor-logo.svg" width="16" height="16" alt=""
+                            aria-hidden="true">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <div class="fixed-info" aria-hidden="true">
+        <div class="fixed-info__chat">
+            <div class="fixed-info__message">
+                <span class="fixed-info__message-icons" aria-hidden="true">
+                    <img src="img/chat.svg" width="6" height="4" alt="">
+                    <img src="img/chat.svg" width="6" height="4" alt="">
+                </span>
+                <span class="fixed-info__message-text">Ми на зв’язку <br> та готові допомогти!</span>
+            </div>
+            <button class="fixed-info__call-btn" type="button" aria-controls="callback-modal">
+                Замовити <br> дзвінок
+            </button>
+        </div>
+        <button class="fixed-info__top-btn" type="button" aria-label="Повернутися вгору">
+            <img src="img/btn.svg" width="50" height="50" alt="" aria-hidden="true">
+        </button>
+    </div>
+
+
+
+    <div class="modal" id="callback-modal" aria-hidden="true">
+        <div class="modal__content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="modal__close" type="button" aria-label="Закрити" data-modal-close>
+                <img src="img/close2.svg" width="24" height="24" alt="">
+            </button>
+            <h2 class="modal__title">Отримати консультацію</h2>
+            <p class="modal__text">Перша консультація безкоштовна. Розкажіть про свій бізнес — запропонуємо рішення і
+                назвемо точну ціну.</p>
+
+            <form class="feedback__form">
+
+                <div class="feedback__field">
+                    <input class="feedback__input" type="text" name="name" id="user-name-popup" placeholder="Ім’я"
+                        aria-label="Ваше ім’я" required>
+                </div>
+
+                <div class="feedback__radio-group">
+                    <p class="feedback__radio-title">Оберіть спосіб звʼязку з Вами:</p>
+                    <div class="feedback__radio-options">
+                        <label class="feedback__radio-label" for="contact-email">
+                            <input class="feedback__radio-input" type="radio" name="contact_method"
+                                id="contact-email-popup" value="email" checked>
+                            <span class="feedback__radio-text">Email</span>
+                        </label>
+                        <label class="feedback__radio-label" for="contact-phone">
+                            <input class="feedback__radio-input" type="radio" name="contact_method"
+                                id="contact-phone-popup" value="phone">
+                            <span class="feedback__radio-text">Телефон</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="feedback__field">
+                    <input class="feedback__input" type="email" name="email" id="user-email-popup" placeholder="Email"
+                        aria-label="Ваш Email" required>
+                </div>
+
+                <div class="feedback__field">
+                    <textarea class="feedback__textarea" name="message" id="user-message-popup"
+                        placeholder="Повідомлення" aria-label="Ваше повідомлення"></textarea>
+                </div>
+
+                <div class="feedback__consent">
+                    <label class="feedback__consent-label" for="user-consent">
+                        <input class="feedback__consent-input" type="checkbox" name="consent" id="user-consent-popup"
+                            required>
+                        <span class="feedback__consent-text">Погоджуюсь на обробку персональних даних</span>
+                    </label>
+                </div>
+
+                <button class="feedback__submit btn" type="submit">
+                    Надіслати
+                    <img class="feedback__submit-icon" src="img/link-arrow-black.svg" width="37" height="11" alt=""
+                        aria-hidden="true">
+                </button>
+
+                <p class="feedback__policy">Ваші дані захищені та не передаються третім особам. Відповімо протягом
+                    одного робочого дня.</p>
+            </form>
+        </div>
+    </div>
+
+    <div class="mobile-menu__overlay"></div>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <div class="mobile-menu__container">
+
+            <div class="mobile-menu__header">
+                <button class="mobile-menu__back is-hidden" id="menu-back-btn" aria-label="Повернутися назад">
+                    <img src="img/nav-prev.svg" width="27" height="24" alt="">
+                </button>
+                <button class="mobile-menu__close" id="menu-close-btn" aria-label="Закрити меню">
+                    <img src="img/close.svg" width="32" height="32" alt="">
+                </button>
+            </div>
+
+            <div class="mobile-menu__body">
+
+                <div class="mobile-menu__panel mobile-menu__panel--main is-active" id="panel-main">
+                    <nav class="mobile-menu__nav">
+                        <ul class="mobile-menu__list mobile-menu__list--primary">
+                            <li class="mobile-menu__item">
+                                <button class="mobile-menu__trigger" data-target="panel-services" aria-expanded="false">
+                                    Бухгалтерські послуги
+                                    <span class="mobile-menu__arrow">
+                                        <img src="img/nav-arrow-right.svg" width="7" height="13" alt="">
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <button class="mobile-menu__trigger" data-target="panel-registration"
+                                    aria-expanded="false">
+                                    Реєстрація бізнесу
+                                    <span class="mobile-menu__arrow">
+                                        <img src="img/nav-arrow-right.svg" width="7" height="13" alt="">
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <button class="mobile-menu__trigger" data-target="panel-consulting"
+                                    aria-expanded="false">
+                                    Податковий консалтинг
+                                    <span class="mobile-menu__arrow">
+                                        <img src="img/nav-arrow-right.svg" width="7" height="13" alt="">
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <button class="mobile-menu__trigger" data-target="panel-tarif" aria-expanded="false">
+                                    Тарифи
+                                    <span class="mobile-menu__arrow">
+                                        <img src="img/nav-arrow-right.svg" width="7" height="13" alt="">
+                                    </span>
+                                </button>
+                            </li>
+                        </ul>
+
+                        <ul class="mobile-menu__list mobile-menu__list--secondary">
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Про нас</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Фінансова
+                                    відповідальність</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Медіа</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Контакти</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="mobile-menu__contacts">
+                        <div class="mobile-menu__phones">
+                            <a href="tel:+380981045341" class="mobile-menu__phone">+38 (098) 104 53 41</a>
+                            <a href="tel:+380953810683" class="mobile-menu__phone">+38 (095) 381 06 83</a>
+                        </div>
+                        <ul class="mobile-menu__socials">
+                            <li class="mobile-menu__socials-item">
+                                <a href="/" class="mobile-menu__socials-link" aria-label="Telegram">
+                                    <img src="img/telegram.svg" width="32" height="32" alt="">
+                                </a>
+                            </li>
+                            <li class="mobile-menu__socials-item">
+                                <a href="/" class="mobile-menu__socials-link" aria-label="WhatsApp">
+                                    <img src="img/whatsapp.svg" width="32" height="32" alt="">
+                                </a>
+                            </li>
+                            <li class="mobile-menu__socials-item">
+                                <a href="/" class="mobile-menu__socials-link" aria-label="Viber">
+                                    <img src="img/viber.svg" width="32" height="32" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mobile-menu__panel mobile-menu__panel--sub" id="panel-services">
+                    <nav class="mobile-menu__nav">
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Бухгалтерські послуги
+                                    для ФОП</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Бухгалтерські послуги
+                                    для ТОВ</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Бухгалтерські послуги
+                                    для неприбуткових організацій</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Дія Сіті</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Кадровий облік</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Відновлення
+                                    бухгалтерського обліку</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Разові бухгалтерські
+                                    послуги</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Аутсорсинг
+                                    бухгалтерських послуг</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="mobile-menu__panel mobile-menu__panel--sub" id="panel-registration">
+                    <nav class="mobile-menu__nav">
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Реєстрація ФОП</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Реєстрація ТОВ</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Ліквідація ФОП та
+                                    ТОВ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="mobile-menu__panel mobile-menu__panel--sub" id="panel-consulting">
+                    <nav class="mobile-menu__nav">
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Податкові
+                                    консультації</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Робота з податковими
+                                    органами</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Супровід камеральних та
+                                    виїзних перевірок</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Звітність по КІК</a>
+                            </li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Оптимізація
+                                    оподаткування</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Декларація про майновий
+                                    стан та доходи фізичних осіб</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="mobile-menu__panel mobile-menu__panel--sub" id="panel-tarif">
+                    <nav class="mobile-menu__nav">
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Тарифи для ТОВ</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Тарифи для ФОП</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Тарифи для НПО</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Тарифи на реєстрацію та
+                                    ліквідацію</a></li>
+                            <li class="mobile-menu__item"><a href="/" class="mobile-menu__link">Розрахувати вартість
+                                    супроводу</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+
+            <div class="mobile-menu__footer-fixed">
+                <div class="mobile-menu__lang">
+                    <div class="lang-dropdown lang-dropdown--menu" data-lang-dropdown>
+                        <button type="button" class="lang-dropdown__trigger" aria-haspopup="listbox"
+                            aria-expanded="false" aria-label="Вибір мови">
+                            <span class="lang-dropdown__value">Укр</span>
+                            <span class="lang-dropdown__chevron" aria-hidden="true"></span>
+                        </button>
+                        <ul class="lang-dropdown__menu" role="listbox" aria-label="Вибір мови" hidden>
+                            <li>
+                                <button type="button" class="lang-dropdown__option is-selected" role="option"
+                                    data-value="uk" data-short="Укр" aria-selected="true">Українська</button>
+                            </li>
+                            <li>
+                                <button type="button" class="lang-dropdown__option" role="option" data-value="ru"
+                                    data-short="Ру" aria-selected="false">Русский</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="libs/fancybox/fancybox.umd.js"></script>
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="libs/aos/aos.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
