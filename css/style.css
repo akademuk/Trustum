@@ -6314,7 +6314,6 @@ ul.global-cards__info-item-description {
 
 
 
-
 @media(max-width: 1200px) {
 
   :root {
@@ -6595,6 +6594,19 @@ ul.global-cards__info-item-description {
   
   .single-case__hero-header--prices--tov .prcie__boxs-section .prcie__boxs {
     width: 100%;
+  }
+
+  .hero--banner .hero__container {
+    flex-wrap: wrap;
+  }
+
+  .hero--banner-image .hero__stats {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .hero--banner.hero--banner-not-image .hero__stats{
+    display: none;
   }
 }
 
